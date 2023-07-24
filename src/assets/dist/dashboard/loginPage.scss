@@ -1,0 +1,29 @@
+@import '../../all.scss';
+
+form {
+  @extend %flexbox8;
+  
+  > div {
+    > .titleText {
+      color: $color1;
+      font-size: $length2*3.5 ;
+      margin-bottom: $length2*2 ;
+    }
+
+    > div {
+      > .btnColor {
+        width: $length1*3.5 ;
+        margin-left: $length2*8 ;
+        background-color: $color2;
+        color: blanchedalmond;
+      }
+      
+      > .btnColor:hover {
+        width: $length1*3.5 ;
+        margin-left: $length2*8;
+        background-color: blanchedalmond;
+        color: $color2;
+      }
+    }
+  }
+}

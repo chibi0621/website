@@ -1,0 +1,34 @@
+@import '../../all.scss';
+
+.dashboardBox {
+  text-align: center;
+  background-color: $color4;
+  color: $color1;
+
+  > div {
+    > a {
+      > .logoText {
+        width: $length1*3.5 ;
+        height: auto;
+      }
+  
+      > .navbarText {
+        font-size: $font2;
+        color: $color11;
+        padding-right: $length2*3 ;
+      }
+    }
+
+    > div > .link {
+      @extend %flexbox2;
+      width: $length1*3 ;
+      padding-left: $length2*8 ;
+      letter-spacing: $length2/5*2 ;
+
+      > a {
+        color: $color1;
+        font-size: $font4;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../all.scss';
+
+@mixin flexBox7 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.productListBox {
+  @include flexBox7;
+  margin-left: $length2*6 ;
+
+  > div {
+    > .btnGetProduct {
+      border: 0;
+      background-color: $color8;
+
+      > .productTitle {
+        margin: 0;
+        color: $color2;
+        font-weight: bold;
+      }
+
+      > .productImg {
+        margin-top: $length2*2;
+        margin-bottom: $length2*2;
+        width: $length4*2.7;
+        height: $length4*1.8;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    > .productPrice {
+      margin-bottom: $length2*2;
+      color: $color1;
+      font-size: $font4;
+      font-weight: bold;
+    }
+
+    > div {
+      > .btnColorLight {
+        color: $color1;
+        border: $color3 1px solid;
+        font-size: $font3;
+        height: $length2*4;
+      }
+      
+      > .btnColorLight:hover {
+        color: $color1;
+        background-color: $color9;
+      }
+
+      > .btnColor {
+        color: $color1;
+        background-color: $color9;
+      }
+      
+      > .btnColor:hover {
+        color: $color10;
+        background-color: $color9;
+      }
+    }
+  }
+}

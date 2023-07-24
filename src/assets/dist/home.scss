@@ -1,0 +1,516 @@
+@import '../all.scss';
+
+header {
+  padding-top: $length2/2 ;
+  text-align: center;
+  background-color: $color2;
+  color: blanchedalmond;
+
+  > h6 > .truck {
+    padding-bottom: $length2/5 ;
+  }
+}
+
+nav {
+  @extend %flexbox2;
+  margin-top: $length2*3 ;
+  background-color: $color4;
+  height: $length1;
+
+  > .brandBox{
+    @extend %flexbox1;
+    margin-top: $length2;
+    width: $length4*3 ;
+    padding-left: $length2*4 ;
+    padding-bottom: $length2*4 ;
+    padding-top: $length2*4 ;
+
+    > .logo {
+      width: $length1*2.75 ;
+      height: auto;
+    }
+  }
+
+  > .search {
+    display: flex;
+    width: $length1*2.25 ;
+    margin-top: $length1/10 ;
+  
+    > .searchBtn {
+      background-color: $color4;
+    }
+  }
+  
+  > .topBox {
+    @extend %flexbox2;
+    width: $length1;
+    margin-top: $length1/10 ;
+    
+    > .icons {
+      @extend %flexbox2;
+      width: $length1*2.5 ;
+      padding: 0;
+
+      > .pt1{
+        padding-top: $length2;
+      }
+    }
+
+    > .offcanvasButton {
+      background-color: $color8;
+      border: $color4;
+      margin-right: $length2*3 ;
+    }
+  }
+
+  > div {
+    > div > div > .logoText {
+      width: $length4*2 ;
+      height: auto;
+      margin-left: $length2;
+      border-radius: $length2/2 ;
+    }
+    > div > .pe4 {
+      padding-right: $length2*2 ;
+  
+      > .liBackground {
+        background-image: url("http://design-ec.com/d/e_title_5/e_title_54.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      > li > a > .asideSale {
+        width: $length1*4.5 ;
+        height: auto;
+      }
+
+      > .liContact {
+        @extend %flexbox4;
+        margin-bottom: $length2;
+
+        > p {
+          margin-bottom: 0;
+          margin-left: $length2;
+          color: $color5;
+        }
+      }
+    }
+  }
+}
+
+main {
+  > .mainCarousel {
+    width: $length1*4.5 ;
+    height: auto;
+    padding: $length1/4 ;
+    margin: 0 auto;
+    margin-top: $length2*4 ;
+  }
+
+  > .sectionCarousel {
+    width: $length1*4.25 ;
+    height: auto;
+    padding: $length1/2 ;
+    margin: 0 auto;
+
+    > .title3 {
+      color: $color2;
+      text-shadow: $length3 $length3 $color4;
+      letter-spacing: $length2/10*3 ;
+    }
+  }
+
+  > .sectionCards {
+    padding: $length1/2 ;
+    margin: 0 auto;
+
+    > h3 {
+      color: $color2;
+      text-shadow: $length3 $length3 $color4;
+      letter-spacing: $length2/10*3 ;
+      font-size: $font3*2 ;
+    }
+   
+    > div > div {
+
+      > .cardImg {
+        margin: 0 auto;
+        padding: $length1/2 ;
+        width: $length1*4.5 ;
+        height: auto;
+      }
+
+      > div > .nameColor {
+        color: $color1;
+        font-weight: bold;
+      }
+
+      > .cardFooterBox {
+        text-align: end;
+  
+        > .cardBtn {
+          border: 0px;
+          margin-left: $length1/4 ;
+        }
+      }
+    }
+  }
+
+  > .articleCards {
+    width: $length1*4.25 ;
+    height: auto;
+    padding: $length1/4 ;
+    margin: 0 auto;
+
+    > div > .cardBg {
+      background-color: rgba(33, 37, 41, 0.03);
+
+      > .articleImg {
+        width: $length1*4.5 ;
+        height: auto;
+        margin: 0 auto;
+        padding-top: $length1/2 ;
+        padding-left: $length1/2 ;
+        padding-right: $length1/2 ;
+      }
+
+      > div {
+        > .titleColor {
+          color: $color2;
+          font-weight: bold;
+        }
+  
+        > .pColor {
+          color: $color1;
+        }
+      }
+
+      > .cardFooterBox {
+        text-align: end;
+
+        > .btnColor {
+          background-color: $color1;
+          color: blanchedalmond;
+        }
+      }
+    }
+  }
+}
+
+.backTopBox {
+  margin-bottom: $length2*2 ;
+  margin-right: $length2*2 ;
+
+  > .backTop {
+    width: $length2*12 ;
+    height: auto;
+  }
+}
+
+footer {
+  background-color: $color2;
+
+  >.footerBox {
+    @extend %flexbox3;
+
+    > .ulBox {
+      @extend %flexbox2;
+      margin-bottom: $length2*6 ;
+      margin-top: $length2*6 ;
+
+      > li > a{
+        margin: $length2*5 ;
+        font-weight: bold;
+        color: blanchedalmond;
+        letter-spacing: $length2/10 ;
+      }
+      
+      > li > a:hover{
+        margin: $length2*5 ;
+        font-weight: bold;
+        color: $color7;
+        letter-spacing: $length2/10 ;
+      }
+    }
+
+    .logoBox {
+      @extend %flexbox1;
+    }
+
+    > .footerLogo {
+      width: $length1*2.5 ;
+      height: auto;
+    }
+
+    > .boxCenter {
+      @extend %flexbox1;
+    }
+
+    > .footerColor {
+      color: $color6;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  nav {
+    margin-top: 0;
+
+    > .brandBox {
+      width: $length4*2 ;
+      padding: 0;
+
+      > .logo {
+        width: $length1*3.5 ;
+        height: auto;
+      }
+    }
+
+    > .search {
+      display: none;
+    }
+
+    > .topBox > .icons {
+      display: none;
+    }
+  }
+  main {
+    > .sectionCards {
+      display: none;
+    }
+
+    > .articleCards {
+      display: none;
+      margin-bottom: $length4;
+    }
+  }
+  .backTopBox {
+    text-align: center;
+    margin: 0;
+    margin-bottom: $length2;
+
+    > a > .backTop {
+      width: $length2*12 ;
+    }
+  }
+  footer {
+    > .footerBox {
+      > .ulBox {
+        display: none;
+      }
+
+      > .logoBox> .footerLogo {
+        width: $length1*2.5 ;
+        height: auto;
+      }
+
+      > .footerColor {
+        font-size: $font1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: none;
+  }
+
+  nav {
+    margin-top: 0;
+
+    > .brandBox {
+      width: $length4*2.5 ;
+      padding: 0;
+    }
+
+    > .search {
+      display: none;
+    }
+
+    > .topBox > .icons {
+      display: none;
+    }
+  }
+
+  main {
+    > .sectionCards {
+      display: none;
+    }
+    > .articleCards {
+      display: none;
+    }
+  }
+
+  .backTopBox {
+    text-align: center;
+    margin: 0;
+    margin-bottom: $length2;
+
+    > a > .backTop {
+      width: $length2*12 ;
+      height: auto;
+    }
+  }
+
+  footer {
+    > .footerBox {
+      > .ulBox {
+        display: none;
+      }
+
+      > .logoBox> .footerLogo {
+        width: $length1*3 ;
+        height: auto;
+      }
+
+      > .footerColor {
+        font-size: $font1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    > .brandBox {
+      width: $length4*2.5 ;
+      padding: 0;
+    }
+    
+    > .search {
+      display: flex;
+    }
+
+    > .topBox {
+      > .icons {
+        display: none;
+      }
+
+      > .offcanvasButton {
+        margin-left: $length2*10 ;
+      }
+    }
+  }
+
+  .backTopBox {
+    text-align: center;
+    margin: 0;
+    margin-bottom: $length2*2 ;
+
+    > a > .backTop {
+      width: $length2*14 ;
+      height: auto;
+    }
+  }
+
+  footer {
+    > .footerBox {
+      > .ulBox {
+        display: flex;
+        margin-bottom: $length2*4 ;
+
+        > li > a{
+          margin: $length2*3 ;
+        }
+      }
+
+      > .logoBox > .footerLogo {
+        margin-bottom: $length2*2 ;
+      }
+
+      > .footerColor {
+        font-size: $font2;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    > .brandBox {
+      width: $length4*2.5 + $length3*6 ;
+      padding: 0;
+    }
+  }
+
+  main {
+    > .sectionCards {
+      display: block;
+    }
+
+    > .articleCards {
+      display: block;
+    }
+  }
+
+  .backTopBox {
+    text-align: end;
+    margin-bottom: $length2*2 ;
+    margin-right: $length2*2 ;
+
+    > a > .backTop {
+      width: $length2*12 ;
+      height: auto;
+    }
+  }
+
+  footer {
+    > .footerBox {
+      > .ulBox > li > a{
+        font-size: $font3;
+        margin: $length2*4 ;
+      }
+
+      > .logoBox > .footerLogo {
+        margin-bottom: 0;
+      }
+
+      > .footerColor {
+        font-size: $font3;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    display: block;
+  }
+  
+  nav {
+    margin-top: $length2*3 ;
+
+    > .brandBox {
+      width: $length4*3 ;
+      padding-left: $length2*4 ;
+      padding-bottom: $length2*4 ;
+      padding-top: $length2*4 ;
+    }
+    
+    > .topBox> .icons {
+      display: flex;
+    }
+  }
+
+  > .backTopBox > .backTop {
+    width: $length2*12 ;
+    height: auto;
+  }
+
+  footer {
+    > .footerBox {
+      > .ulBox > li > a{
+        margin: $length2*5 ;
+      }
+    }
+  }
+
+  > .logoBox >.footerLogo {
+    margin-bottom: $length2*2 ;
+  }
+}

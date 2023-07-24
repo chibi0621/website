@@ -1,0 +1,9 @@
+import h2 {
+  color: #5d4036;
+}
+
+.btnColor {
+  width: 30%;
+  background-color: #8c6450;
+  color: #F4E0D4;
+}

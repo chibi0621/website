@@ -1,0 +1,16 @@
+@import '../../../all.scss';
+
+.h6 {
+  color: $color12;
+  background-color:  $color13;
+  border-radius: $length2/5*2;
+}
+
+hr {
+  color: $color12;
+}
+
+.modalColor {
+  background-color: $color2;
+  color: $color7;
+}

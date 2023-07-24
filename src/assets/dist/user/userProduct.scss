@@ -1,0 +1,58 @@
+@import '../../all.scss';
+
+.container {
+  > .breadBox {
+    @extend %flexbox4;
+    width: $length1*5 ;
+    height: $length2*6 ;
+    background-color: $color8;
+
+    > ol {
+      > li {
+        font-size: $font4;
+  
+        > a {
+          text-decoration: none;
+        }
+
+        > .cart {
+          color: $color2;
+        }
+        
+      }
+      
+      > .breadLi {
+        padding-top: $length2/5 ;
+      }
+    }
+  }
+
+  > .productDetail {
+    > div {
+      > .productName {
+        color: $color1;
+        font-size: $length2*3 ;
+        margin-bottom: $length2*2 ;
+      }
+
+      > .text {
+        color: $color2;
+        font-size: $length2*2 ;
+        margin-left: $length2/2 ;
+        margin-bottom: $length2*2;
+      }
+      
+      > .priceText {
+        color: $color1;
+        font-size: $length2*2 ;
+        margin-bottom: $length2*2;
+      }
+      
+      > .btnColor {
+        background-color: $color2;
+        color: blanchedalmond;
+      }
+    }
+
+  }
+}

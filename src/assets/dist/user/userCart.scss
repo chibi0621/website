@@ -1,0 +1,25 @@
+@import '../../all.scss';
+
+.btnCoupon {
+  background-color: $color3;
+  color: $color1;
+}
+
+.btnCoupon:hover {
+  background-color: $color7;
+  color: $color2;
+  border: 1px solid $color1;
+}
+
+.btnColor {
+  width: $length1*2 ;
+  background-color: $color2;
+  color: $color4;
+}
+
+.btnColor:hover {
+  width: $length1*2 ;
+  background-color: $color7;
+  color: $color2;
+  border: 1px solid $color1;
+}

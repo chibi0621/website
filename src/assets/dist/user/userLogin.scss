@@ -1,0 +1,301 @@
+@import '../../all.scss';
+
+a {
+  margin: 0;
+}
+
+@mixin flexBox5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  > .boxLeft {
+    padding-left: $length1/4;
+    margin-top: $length2;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    @extend %mutedBorder;
+
+    > .login {
+      @extend %title;
+      color: $color1;
+    }
+
+    > div > .inputLength {
+      width: $length1*4 ;
+    }
+
+    > .loginButton {
+      padding-left: $length2*6;
+      margin-bottom: $length2*6;
+      margin-top: $length2*3;
+
+      > .btnColor {
+        background-color: $color2;
+        color: blanchedalmond;
+      }
+
+      > .btnColor:hover {
+        background-color: blanchedalmond;
+        color: $color2;
+      }
+
+      > .btnBig {
+        width: $length1*3.5;
+      }
+    }
+
+    > .List {
+      width: $length1*3.75;
+      margin-left: $length2*4;
+
+      > .qBox {
+        @extend %flexbox6;
+        padding: 0;
+
+        > li > .boxLink {
+          color: $color1;
+          letter-spacing: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  > .hrBox {
+    display: none;
+  }
+
+  > .allRightBox {
+    padding-left: $length2*6;
+    margin-top: $length2;
+    @include  flexBox5;
+
+    > .sign {
+      @extend %title;
+      margin-right: $length2*33;
+      color: $color1;
+    }
+
+    > .boxRight {
+      @include  flexBox5;
+      width: $length1*4;
+      height: $length2*24;
+      margin-bottom: $length2*6;
+      @extend %mutedBorder;
+
+      > .member {
+        color: $color1;
+        padding: $length1/4;
+        font-weight: 700;
+        font-size: $length2*2.5;
+        margin-bottom: $length2/2;
+      }
+
+      > div {
+        > .btnSmall {
+          width: $length1*6;
+        }
+        > .btnColor {
+          background-color: $color2;
+          color: blanchedalmond;
+        }
+        > .btnColor:hover {
+          background-color: blanchedalmond;
+          color: $color2;
+        }
+        > .btnColorLight {
+          background-color: $color3;
+          color: $color1;
+        }
+        
+        >.btnColorLight:hover {
+          background-color: $color1;
+          color: $color3;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    > .boxLeft {
+      margin-bottom: $length1/4;
+      border: 0;
+      > div > .inputLength {
+        width: $length1*4.5;
+      }
+  
+      > .loginButton > .btnBig {
+        width: $length1*3.75;
+        margin-left: $length2*1.5;
+      }
+  
+      > .List {
+        width: $length1*4;
+        margin-left: $length2*4;
+      }
+    }
+    
+    > .hrBox {
+      display: block;
+      margin-bottom: $length1/4;
+    }
+
+    > .allRightBox {
+      display: block;
+
+      > .sign {
+        margin-right: 0;
+        margin-bottom: $length2*3;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  form {
+    > .boxLeft {
+      margin-bottom: $length1/3;
+      border: 0;
+
+      > div > .inputLength {
+        width: $length1*4.5;
+      }
+
+      > .loginButton > .btnBig {
+        width: $length1*3.75;
+        margin-left: $length2*1;
+      }
+
+      > .List {
+        width: $length1*4;
+        margin-left: $length2*3.5;
+      }
+    }
+
+    > .hrBox {
+      display: block;
+      margin-bottom: $length1/4;
+    }
+
+    > .allRightBox {
+      display: block;
+
+      > .sign {
+        margin-right: 0;
+        margin-bottom: $length2*3;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    > .boxLeft {
+      margin-bottom: $length1/4;
+      border: 0;
+      width: $length1*4.5;
+
+      > div > .inputLength {
+        width: $length1*5;
+      }
+
+      > .loginButton > .btnBig {
+        width: $length1*3.5;
+        margin-left: $length2*7.5;
+      }
+
+      > .List {
+        width: $length1*4;
+        margin-left: $length2*8;
+      }
+    }
+
+    > .hrBox {
+      display: block;
+      margin-bottom: $length1/4.5;
+    }
+    
+    > .allRightBox {
+      display: block;
+      width: $length1*5;
+
+      > .sign {
+        margin-right: 0;
+        margin-bottom: $length2*3;
+      }
+
+      > .boxRight {
+        width: $length1*4.5;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  form {
+    > .boxLeft {
+      width: $length1*2.5 ;
+      border-right: 1px solid #dee2e6;
+
+      > div > .inputLength {
+        width: $length1*4.5 ;
+      }
+
+      > .loginButton > .btnBig {
+        width: $length1*3.75 ;
+        margin-left: 0;
+      }
+
+      > .List {
+        width: $length1*4;
+        margin-left: $length2*2.75;
+      }
+    } 
+
+    > .hrBox {
+      display: none;
+    }
+
+    > .allRightBox {
+      display: flex;
+      width: $length1*2.5;
+
+      > .sign {
+        margin-right: $length2*22;
+      } 
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  form {
+    > .boxLeft {
+      > div > .inputLength {
+        width: $length1*4;
+      }
+      
+      >.loginButton > .btnBig {
+        width: $length1*3.5;
+      }
+
+      > .List {
+        width: $length1*3.5;
+        margin-left: $length2*4;
+      }
+    }
+
+    > .allRightBox {
+      .sign {
+        margin-right: $length2*33;
+      }
+    }
+  }
+}

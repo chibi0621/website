@@ -1,0 +1,21 @@
+@import '../../all.scss';
+
+form {
+  > .orderSuccess {
+    font-size: $length2*5 ;
+    color: $colorSuccess;
+    margin-bottom: $length2*6 ;
+    text-align: center;
+  }
+
+  > .orderBox {
+    font-size: $length2*3;
+    margin-bottom: $length2/2 ;
+    color: $color1;
+  }
+  
+  > table > thead > .fontPadding {
+    padding-left: $length2;
+    font-weight: bold;
+  }
+}

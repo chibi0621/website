@@ -1,0 +1,20 @@
+@import '../../all.scss';
+
+.couponBtn {
+  border: 1px solid $color2;
+  border-radius: $length2;
+  background-color: $color8;
+  color: $color2;
+  width: $length1/4*3 ;
+  height: $length2*4 ;
+  margin-right: $length2*3 ;
+}
+
+.couponBtn:hover {
+  background-color: $color2;
+  color: blanchedalmond;
+  width: $length1/4*3 ;
+  height: $length2*4 ;
+  margin-right: $length2*3 ;
+}
+  
