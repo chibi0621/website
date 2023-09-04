@@ -32,23 +32,20 @@
       </form>
       <div class="topBox">
         <ul class="icons">
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#8c6450" class="bi bi-handbag" viewBox="0 0 16 16">
+          <li class="me-4">
+            <a href="#/user/cart" aria-label="Href">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#8c6450" class="bi bi-handbag" viewBox="0 0 16 16">
               <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5
               1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0
               2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1
               0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5
               1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
             </svg>
-          </li>
-          <li class="pt1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#8c6450" class="bi bi-heart-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736
-              3.562-3.248 8 1.314z"/>
-            </svg>
+            </a>
           </li>
           <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#8c6450" class="bi bi-shop-window" viewBox="0 0 16 16">
+            <a href="#/user/product" aria-label="Href">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#8c6450" class="bi bi-shop-window" viewBox="0 0 16 16">
               <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5
               0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37
               2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375
@@ -60,6 +57,7 @@
               .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0
               1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
             </svg>
+            </a>
           </li>
         </ul>
         <button class="navbar-toggler offcanvasButton" type="button"
@@ -81,28 +79,23 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav pe4">
             <li class="nav-item liBackground">
-              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#">
+              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#/user/login">
                 登入&註冊
               </a>
             </li>
             <li class="nav-item liBackground">
-              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#">
-                會員中心
+              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#/user/product">
+                商品列表
               </a>
             </li>
             <li class="nav-item liBackground">
-              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#">
-                常見問題
+              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#/user/cart">
+                購物車
               </a>
             </li>
-            <li class="nav-item liBackground">
-              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#">
+            <li class="nav-item liBackground mb-3">
+              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#/user/contact">
                 聯絡我們
-              </a>
-            </li>
-            <li class="nav-item dropdown liBackground">
-              <a class="nav-link active ms-4 mb-2" aria-current="page" href="#">
-                活動專區
               </a>
             </li>
             <li class="nav-item mb-2">
@@ -121,9 +114,7 @@
               </a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" aria-label="Href">
-                <img class="ps-4 mb-2 asideSale" src="../assets/img/member.png" alt="">
-              </a>
+              <hr class="hrColor">
             </li>
             <li class="nav-item ps-4 mb-2">
               <a href="#" aria-label="Href">
@@ -138,48 +129,6 @@
               <a href="#" aria-label="Href">
                 <img src="../assets/img/yt48.png" alt="">
               </a>
-            </li>
-            <li class="nav-item ps-5 mt-1 liContact">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            fill="#8c6450" class="bi bi-envelope" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0
-              0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13
-              2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8
-              9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1
-              11.105l4.708-2.897L1 5.383v5.722Z"/>
-              </svg>
-              <p>chibi1996@mail.com</p>
-            </li>
-            <li class="nav-item ps-5 liContact">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-              fill="#8c6450" class="bi bi-telephone" viewBox="0 0 16 16">
-                <path d="M3.654 1.328a.678.678 0 0
-                0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45
-                1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569
-                0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678
-                0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745
-                1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0
-                1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654
-                1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29
-                2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0
-                0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745
-                1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163
-                2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634
-                18.634 0 0 1-7.01-4.42 18.634 18.634 0 0
-                1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-              </svg>
-              <p>(02)-24111111</p>
-            </li>
-            <li class="nav-item ps-5 liContact">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-              fill="#8c6450" class="bi bi-map" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5
-                0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5
-                0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1
-                .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4
-                .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
-              </svg>
-              <p>台北市中山區OO路XX號</p>
             </li>
           </ul>
         </div>
@@ -281,12 +230,6 @@
                   1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
                 </svg>
               </button>
-              <button class="cardBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#8c6450" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736
-                  3.562-3.248 8 1.314z"/>
-                </svg>
-              </button>
             </div>
           </div>
           <div class="card">
@@ -306,12 +249,6 @@
                   2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1
                   0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5
                   1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
-                </svg>
-              </button>
-              <button class="cardBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#8c6450" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736
-                  3.562-3.248 8 1.314z"/>
                 </svg>
               </button>
             </div>
@@ -335,12 +272,6 @@
                   1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
                 </svg>
               </button>
-              <button class="cardBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#8c6450" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736
-                  3.562-3.248 8 1.314z"/>
-                </svg>
-              </button>
             </div>
           </div>
           <div class="card">
@@ -360,12 +291,6 @@
                   2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1
                   0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5
                   1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
-                </svg>
-              </button>
-              <button class="cardBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#8c6450" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736
-                  3.562-3.248 8 1.314z"/>
                 </svg>
               </button>
             </div>

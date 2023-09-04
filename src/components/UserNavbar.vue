@@ -13,7 +13,6 @@
         <div class="navbar-nav link ms-5">
           <router-link to="/user/product">商品</router-link>|
           <router-link to="/user/cart">購物車</router-link>|
-          <router-link to="/user/order">訂單</router-link>|
           <router-link to="/user/login">登入</router-link>|
           <router-link to="/" @click.prevent="logout">登出</router-link>
         </div>

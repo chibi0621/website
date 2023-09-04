@@ -13,8 +13,11 @@ a {
 
 form {
   > .boxLeft {
-    padding-left: $length1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: $length2;
+    margin-bottom: $length1/4;
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
@@ -23,16 +26,31 @@ form {
     > .login {
       @extend %title;
       color: $color1;
+      text-align: center;
+    }
+
+    > .loginInput {
+      width: 100%;
+      padding-left: $length1/4;
+      padding-right: $length1/4;
     }
 
     > div > .inputLength {
-      width: $length1*4 ;
+      width: $length1*5 ;
+      margin: 0;
+    }
+
+    > .loginCheckbox {
+      display: flex;
+      padding-left: $length1/4;
+      padding-right: $length1/4;
     }
 
     > .loginButton {
-      padding-left: $length2*6;
-      margin-bottom: $length2*6;
-      margin-top: $length2*3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: $length2*6 ;
 
       > .btnColor {
         background-color: $color2;
@@ -45,13 +63,16 @@ form {
       }
 
       > .btnBig {
-        width: $length1*3.5;
+        width: $length1*2.5;
       }
     }
 
     > .List {
-      width: $length1*3.75;
-      margin-left: $length2*4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $length1*5;
+      margin: 0;
 
       > .qBox {
         @extend %flexbox6;
@@ -71,21 +92,21 @@ form {
   }
 
   > .allRightBox {
-    padding-left: $length2*6;
     margin-top: $length2;
+    margin-bottom: $length1/4;
     @include  flexBox5;
 
     > .sign {
       @extend %title;
-      margin-right: $length2*33;
       color: $color1;
+      text-align: center;
     }
 
     > .boxRight {
       @include  flexBox5;
       width: $length1*4;
       height: $length2*24;
-      margin-bottom: $length2*6;
+      margin-bottom: $length2*4;
       @extend %mutedBorder;
 
       > .member {
@@ -100,6 +121,7 @@ form {
         > .btnSmall {
           width: $length1*6;
         }
+
         > .btnColor {
           background-color: $color2;
           color: blanchedalmond;
@@ -126,20 +148,10 @@ form {
 @media screen and (max-width: 600px) {
   form {
     > .boxLeft {
-      margin-bottom: $length1/4;
       border: 0;
-      > div > .inputLength {
-        width: $length1*4.5;
-      }
   
-      > .loginButton > .btnBig {
-        width: $length1*3.75;
-        margin-left: $length2*1.5;
-      }
-  
-      > .List {
+      > .List > .qBox {
         width: $length1*4;
-        margin-left: $length2*4;
       }
     }
     
@@ -148,35 +160,16 @@ form {
       margin-bottom: $length1/4;
     }
 
-    > .allRightBox {
-      display: block;
-
-      > .sign {
-        margin-right: 0;
-        margin-bottom: $length2*3;
-      }
-    }
   }
 }
 
 @media screen and (min-width: 600px) {
   form {
     > .boxLeft {
-      margin-bottom: $length1/3;
       border: 0;
 
-      > div > .inputLength {
-        width: $length1*4.5;
-      }
-
-      > .loginButton > .btnBig {
+      > .List > .qBox {
         width: $length1*3.75;
-        margin-left: $length2*1;
-      }
-
-      > .List {
-        width: $length1*4;
-        margin-left: $length2*3.5;
       }
     }
 
@@ -185,92 +178,41 @@ form {
       margin-bottom: $length1/4;
     }
 
-    > .allRightBox {
-      display: block;
-
-      > .sign {
-        margin-right: 0;
-        margin-bottom: $length2*3;
-      }
-    }
   }
 }
 
 @media screen and (min-width: 768px) {
   form {
     > .boxLeft {
-      margin-bottom: $length1/4;
-      border: 0;
-      width: $length1*4.5;
-
-      > div > .inputLength {
-        width: $length1*5;
-      }
-
-      > .loginButton > .btnBig {
-        width: $length1*3.5;
-        margin-left: $length2*7.5;
-      }
-
-      > .List {
-        width: $length1*4;
-        margin-left: $length2*8;
-      }
+      width: $length1*2.5;
+      justify-content: flex-start;
+      border-right: 1px solid #dee2e6;
     }
 
     > .hrBox {
-      display: block;
-      margin-bottom: $length1/4.5;
+      display: none;
     }
-    
-    > .allRightBox {
-      display: block;
+
+    > .allRightBox > .boxRight {
       width: $length1*5;
 
-      > .sign {
-        margin-right: 0;
-        margin-bottom: $length2*3;
-      }
-
-      > .boxRight {
-        width: $length1*4.5;
-      }
     }
+    
   }
 }
 
 @media screen and (min-width: 992px) {
   form {
     > .boxLeft {
-      width: $length1*2.5 ;
-      border-right: 1px solid #dee2e6;
 
-      > div > .inputLength {
-        width: $length1*4.5 ;
-      }
-
-      > .loginButton > .btnBig {
-        width: $length1*3.75 ;
-        margin-left: 0;
-      }
-
-      > .List {
+      > .List > .qBox {
         width: $length1*4;
-        margin-left: $length2*2.75;
       }
-    } 
 
-    > .hrBox {
-      display: none;
     }
 
-    > .allRightBox {
-      display: flex;
-      width: $length1*2.5;
-
-      > .sign {
-        margin-right: $length2*22;
-      } 
+    > .allRightBox > .boxRight {
+      width: $length1*4.5;
     }
   }
 }
@@ -278,23 +220,19 @@ form {
 @media screen and (min-width: 1200px) {
   form {
     > .boxLeft {
-      > div > .inputLength {
-        width: $length1*4;
+    
+      >.loginInput {
+        padding-left: $length1/2.5;
+        padding-right: $length1/2.5;
       }
       
-      >.loginButton > .btnBig {
-        width: $length1*3.5;
+      > .loginCheckbox {
+        padding-left: $length1/2.5;
+        padding-right: $length1/2.5;
       }
 
-      > .List {
-        width: $length1*3.5;
-        margin-left: $length2*4;
-      }
-    }
-
-    > .allRightBox {
-      .sign {
-        margin-right: $length2*33;
+      > .loginButton > .btnBig {
+        width: $length1*2.25;
       }
     }
   }

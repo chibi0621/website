@@ -4,13 +4,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
 }
 
 .productListBox {
   @include flexBox7;
-  margin-left: $length2*6 ;
 
   > div {
+
     > .btnGetProduct {
       border: 0;
       background-color: $color8;
@@ -24,10 +25,28 @@
       > .productImg {
         margin-top: $length2*2;
         margin-bottom: $length2*2;
-        width: $length4*2.7;
+        width: $length4*3;
         height: $length4*1.8;
         background-size: cover;
         background-position: center;
+      }
+
+      > .priceBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > .btnColorLight {
+          color: $color1;
+          border: $color3 1px solid;
+          font-size: $font3;
+          height: auto;
+        }
+
+        > .btnColorLight:hover {
+          color: $color1;
+          background-color: $color9;
+        }
       }
     }
 
@@ -38,28 +57,35 @@
       font-weight: bold;
     }
 
-    > div {
-      > .btnColorLight {
-        color: $color1;
-        border: $color3 1px solid;
-        font-size: $font3;
-        height: $length2*4;
-      }
-      
-      > .btnColorLight:hover {
-        color: $color1;
-        background-color: $color9;
-      }
+  }
+}
 
-      > .btnColor {
-        color: $color1;
-        background-color: $color9;
-      }
-      
-      > .btnColor:hover {
-        color: $color10;
-        background-color: $color9;
-      }
-    }
+@media screen and (max-width: 600px) {
+  .productListBox > div {
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .productListBox > div {
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .productListBox > div {
+    margin: 4%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .productListBox > div {
+    margin: 3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productListBox > div {
+    margin: 2%;
   }
 }

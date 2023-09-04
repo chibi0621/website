@@ -61,7 +61,7 @@
           </tr>
         </tfoot>
       </table>
-      <div class="input-group m-2 input-group-sm">
+      <div class="input-group input-group-sm">
         <input type="text" class="form-control" v-model="coupon_code"
         aria-label="Text" placeholder="請輸入優惠碼"/>
         <div class="input-group-append">

@@ -47,7 +47,7 @@ nav {
     margin-top: $length1/10 ;
     
     > .icons {
-      @extend %flexbox2;
+      @extend %flexbox1;
       width: $length1*2.5 ;
       padding: 0;
 
@@ -78,6 +78,10 @@ nav {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+      }
+
+      > li > .hrColor {
+        border: $length3/5 solid $color14;
       }
 
       > li > a > .asideSale {
