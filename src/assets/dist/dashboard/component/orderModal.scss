@@ -1,15 +1,40 @@
 @import '../../../all.scss';
 
-.modalColor {
-  background-color: $color2;
+.modalH6 {
+  @extend %modalH6;
 }
 
-.h5 {
+.modalCancelBtn {
+  border: 0;
+  background-color: transparent;
+  color: $colorDanger;
+  transition: .5s;
+  opacity: .7;
+  font-size: 18px;
+}
+
+.modalCancelBtn:hover {
+  background-color: $colorDanger;
   color: $color7;
+  border-radius: 5px;
+  padding: 3px 7px;
+  opacity: 1;
+  transform: scale(1.1);
 }
 
-.h6 {
-  color: $color12;
-  background-color:  $color13;
-  border-radius: $length2/5*2 ;
+.modalCheckBtn {
+  border: 0;
+  background-color: transparent;
+  transition: .5s;
+  opacity: .7;
+  font-size: 18px;
+}
+
+.modalCheckBtn:hover {
+  background-color: #00000081;
+  color: $color7;
+  border-radius: 5px;
+  padding: 3px 7px;
+  opacity: 1;
+  transform: scale(1.1);
 }

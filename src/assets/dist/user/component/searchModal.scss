@@ -1,0 +1,58 @@
+@import '../../../all.scss';
+
+form {
+  @extend %flexbox1;
+}
+
+.btnCircle {
+  border-radius: 20px;
+  background-color: #8c6450c3;
+  padding: .5rem;
+}
+
+.productSearch {
+  font-size: 28px;
+  color: #8c6450c3;
+}
+
+.searchInput {
+  width: 100%;
+  font-family: 'Libre Baskerville', serif;
+  outline-style: none;
+  padding: 7px 7px ;
+  border: 0;
+  border-bottom: 1px solid $color10;
+  border-radius: 0px;
+}
+
+.searchInput:focus {
+  color: $color1;
+  border: 0;
+  background-color: #8c64501a;
+}
+
+.searchInput::placeholder {
+  letter-spacing: 1px;
+}
+
+.enterBtn {
+  border: 0;
+  margin-left: .5rem;
+  background-color: transparent;
+  color: #8c6450c3;
+  transition: .5s;
+}
+
+.enterBtn:hover {
+  transform: scale(1.3);
+
+  > svg {
+    fill: #000;
+  }
+}
+
+.enterBtn:active {
+  > svg {
+    fill: $color10;
+  }
+}

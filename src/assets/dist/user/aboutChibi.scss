@@ -1,0 +1,52 @@
+@import '../../all.scss';
+
+.navbarBox {
+  padding: 0px 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+div {
+  margin: 0 auto;
+}
+
+h2, h6, p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h6, p {
+  padding-left: 6px;
+}
+
+.aboutUsTitle {
+  color: $color1;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  padding: 0px 120px;
+}
+
+.aboutUsContent {
+  line-height: 24px;
+  padding: 0px 25px;
+}
+
+.aboutUsH5 {
+  color: $color1;
+  background-color: #5d403608;
+  font-family: 'Libre Baskerville', serif;
+  padding: 0px 25px;
+  font-weight: bold;
+}
+
+.aboutUsH6 {
+  font-family: 'Libre Baskerville', serif;
+  padding: 0px 20px;
+}
+
+.aboutUsImg {
+  padding: 30px 35px 30px 25px;
+  margin-bottom: 40px;
+}

@@ -1,6 +1,22 @@
 @import '../../../all.scss';
 
-.color {
-  color: $color2;
-  background-color: $color4;
+.paginationBox {
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationBox > li {
+  border: 0;
+}
+
+.paginationLink {
+  color: rgb(160, 121, 100);
+  background-color: transparent;
+  transition: .5s;
+  border: 0;
+}
+
+.paginationLink:hover {
+  color: #000;
+  transform: scale(.9);
 }

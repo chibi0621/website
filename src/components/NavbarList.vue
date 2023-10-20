@@ -1,29 +1,31 @@
 <template>
-  <nav class="navbar navbar-expand-xl dashboardBox">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="logoText" src="../assets/img/text.png" alt="...">
-        <p class="text-end fst-italic navbarText">後台管理系統</p>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg dashboardBox">
+      <a class="navbar-brand mb-5 navBrand" href="/dashboard" aria-label="Href">
+        <img class="logo" src="../assets/img/quatt.png" alt="">
+        <p class="navText">後台管理系統</p>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-      aria-label="Toggle navigation">
+      <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+      data-bs-target="#dashboardNavbar" aria-controls="dashboardNavbar"
+      aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav link ms-5">
-          <router-link to="/dashboard/products" class="nav-link">產品上架</router-link>|
-          <router-link to="/dashboard/orders" class="nav-link">查看訂單</router-link>|
-          <router-link to="/dashboard/coupons" class="nav-link">新增優惠券</router-link>|
+      <div class="collapse navbar-collapse border border-0 mb-3" id="dashboardNavbar">
+        <div class="navbar-nav link">
+          <router-link to="/dashboard/product" class="nav-link">新增產品</router-link>
+          <router-link to="/dashboard/order" class="nav-link">查看訂單</router-link>
+          <router-link to="/dashboard/coupon" class="nav-link">新增優惠券</router-link>
+          <router-link to="/dashboard/login" class="nav-link">登入</router-link>
           <router-link to="/" @click.prevent="logout" class="nav-link">登出</router-link>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
 
 <script>
 import '@/assets/dist/dashboard/dashBoardNavbar.scss';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default {
   methods: {

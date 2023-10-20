@@ -2,28 +2,50 @@
 
 form {
   @extend %flexbox8;
-  
-  > div {
-    > .titleText {
-      color: $color1;
-      font-size: $length2*3.5 ;
-      margin-bottom: $length2*2 ;
-    }
+  font-family: 'Libre Baskerville', serif;
+  margin:  0 auto;
+}
 
-    > div {
-      > .btnColor {
-        width: $length1*3.5 ;
-        margin-left: $length2*8 ;
-        background-color: $color2;
-        color: blanchedalmond;
-      }
-      
-      > .btnColor:hover {
-        width: $length1*3.5 ;
-        margin-left: $length2*8;
-        background-color: blanchedalmond;
-        color: $color2;
-      }
-    }
-  }
+
+.memberLogin {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  color: $color1;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.memberInput {
+  font-family: 'Libre Baskerville', serif;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid #00000058;
+  caret-color: #000;
+}
+
+.memberInput:focus {
+  outline: none;
+}
+
+.loginBtn {
+  font-family: 'Libre Baskerville', serif;
+  width: 40%;
+  padding: 8px 0px;
+  border: 0;
+  background-color: rgba(128, 128, 128, 0.107);
+  color: #000;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: .5s;
+}
+
+.loginBtn:hover {
+  color: $color1;
+  background-color: transparent;
+  border: 1px solid $color1;
+  border-radius: 10px;
+  opacity: .7;
+  transform: scale(1.1);
 }

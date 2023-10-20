@@ -1,34 +1,146 @@
 @import '../../all.scss';
 
 .dashboardBox {
+  @extend %flexbox3;
   text-align: center;
-  background-color: $color4;
   color: $color1;
+  font-family: 'Libre Baskerville', serif;
+}
 
-  > div {
-    > a {
-      > .logoText {
-        width: $length1*3.5 ;
-        height: auto;
-      }
-  
-      > .navbarText {
-        font-size: $font2;
-        color: $color11;
-        padding-right: $length2*3 ;
-      }
-    }
+.navBrand {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
 
-    > div > .link {
-      @extend %flexbox2;
-      width: $length1*3 ;
-      padding-left: $length2*8 ;
-      letter-spacing: $length2/5*2 ;
+> .logo {
+  margin: 0;
+}
 
-      > a {
-        color: $color1;
-        font-size: $font4;
-      }
-    }
+.navText {
+  letter-spacing: 16px;
+  padding: 0px 0px 0px 40px;
+}
+
+
+.link {
+  @extend %flexbox2;
+  width: 900px;
+  letter-spacing: $length2/5*2 ;
+}
+
+.link > a {
+  color: #000;
+  font-size: $font4;
+  border-bottom: 1px solid rgb(160,121,100);
+  transition: .5s;
+  opacity: 1;
+}
+      
+.link > a:hover {
+  color: $color2;
+  border-bottom: 1px solid #000;
+  opacity: .9;
+  transform: scale(1.1);
+}
+
+.navHr {
+  color: rgb(160,121,100);
+}
+
+@media screen and (max-width: 600px) {
+  .dashboardBox {
+    flex-direction: row;
+  }
+
+  .navBrand {
+    width: 70%;
+    align-items: flex-start;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+
+  .navText {
+    letter-spacing: 10px;
+    font-size: 16px;
+    padding: 0px 0px 0px 14px;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .dashboardBox {
+    flex-direction: row;
+  }
+
+  .navBrand {
+    width: 70%;
+    align-items: flex-start;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+
+  .navText {
+    letter-spacing: 10px;
+    font-size: 16px;
+    padding: 0px 0px 0px 20px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .dashboardBox {
+    flex-direction: row;
+  }
+
+  .navBrand {
+    width: 70%;
+    align-items: flex-start;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+
+  .navText {
+    letter-spacing: 14px;
+    font-size: 18px;
+    padding: 0px 0px 0px 34px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .dashboardBox {
+    flex-direction: column;
+  }
+
+  .navBrand {
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 50%;
+  }
+
+  .navText {
+    letter-spacing: 16px;
+    padding: 0px 0px 0px 42px;
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .navText {
+    letter-spacing: 16px;
+    padding: 0px 0px 0px 40px;
+    font-size: 20px;
   }
 }

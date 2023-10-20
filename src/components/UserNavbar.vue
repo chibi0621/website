@@ -1,28 +1,34 @@
 <template>
-  <nav class="navbar navbar-expand-xl navbarBox">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="logoText" src="../assets/img/textDark2.png" alt="...">
+  <div class="container-fluid">
+    <div class="navbarBox">
+      <a class="navbar-brand" href="#" aria-label="Href">
+        <img class="logo" src="../assets/img/quatt.png" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-      aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navBox" id="userNavbar">
+        <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#userNavbar" aria-controls="userNavbar"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav link ms-5">
-          <router-link to="/user/product">商品</router-link>|
-          <router-link to="/user/cart">購物車</router-link>|
-          <router-link to="/user/login">登入</router-link>|
-          <router-link to="/" @click.prevent="logout">登出</router-link>
+        </button>
+        <div class="collapse navbar-collapse linkBox" id="userNavbar">
+          <div class="navbar-nav navLink">
+            <router-link to="/user/promotional_activity">NEWS</router-link>
+            <router-link to="/user/product">PRODUCTS</router-link>
+            <router-link to="/user/cart">CART</router-link>
+            <router-link to="/user/about_chibi">COMPANY</router-link>
+            <router-link to="/user/store_location">STORE</router-link>
+            <router-link to="/user/login">LOG IN</router-link>
+            <router-link to="/" @click.prevent="logout">SIGN OUT</router-link>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script>
-import '@/assets/dist/user/userNavbar.scss';
+import '@/assets/dist/user/component/userNavbar.scss';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default {
   methods: {

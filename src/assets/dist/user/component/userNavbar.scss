@@ -1,0 +1,114 @@
+@import '@/assets/all.scss';
+
+.navbarBox {
+  @extend %flexbox2;
+  margin: 0 auto;
+  padding: 0px 45px ;
+  background-color: $color7;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 50px;
+}
+
+.navbarBox > a {
+  transition: all .5s ease;
+}
+
+.logo {
+  max-width: 50%;
+  height: auto;
+  vertical-align: middle;
+  transition: .5s;
+}
+
+.logo:hover {
+  transform: scale(0.9);
+}
+
+.navBox {
+  @extend %flexbox6;
+  margin: 0;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
+  margin-left: 100px;
+}
+
+.linkBox {
+  justify-content: space-around;
+}
+    
+.navLink {
+  width:800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navLink > a {
+  width: 100%;
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  transition: .5s;
+  opacity: 1;
+}
+
+.navLink > a:hover {
+  color: $color2;
+  opacity: .9;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .navbarBox {
+    padding: 0px 15px 0px 30px ;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .navbarBox {
+    padding: 0px 20px 0px 35px ;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbarBox {
+    padding: 0px 25px 0px 40px ;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbarBox {
+    width: 100%;
+    padding: 0px 20px 0px 35px ;
+  }
+
+  .navBox{
+    margin: 0;
+  }
+  .navLink {
+    width: 650px;
+  }
+
+  .navLink > a {
+    padding: 3px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbarBox {
+    width: 100%;
+    padding: 0px 45px ;
+  }
+
+  .navLink {
+    width: 800px;
+  }
+
+  .navLink > a  {
+    padding: 0;
+  }
+}

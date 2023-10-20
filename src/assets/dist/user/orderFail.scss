@@ -1,14 +1,20 @@
 @import '../../all.scss';
 
+.navbarBox {
+  padding: 0px 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
 .alertBox {
   @extend %flexbox3;
   color: $colorDanger;
-  background-color: $color4;
+  font-family: 'Libre Baskerville', serif;
+  background-color: rgba(128, 128, 128, 0.092);
   padding-bottom: $length2/2 ;
-  margin-top: $length2*3 ;
-  margin-bottom: $length2*3 ;
-  margin-right: $length2*6 ;
-  margin-left: $length2*6 ;
+  margin: $length2*3 $length2*6;
 
   > .iconBox {
     margin-bottom: $length2*6 ;

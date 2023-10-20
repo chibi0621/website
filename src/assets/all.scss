@@ -2,6 +2,7 @@
 @import './helpers/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 $color1: #5d4036;
 $color2: #8c6450;
@@ -67,7 +68,8 @@ $font4: 18px;
 %flexbox7 {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 %flexbox8 {
@@ -75,6 +77,27 @@ $font4: 18px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+%flexbox9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+%flexbox10 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+%flexbox11 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 %mutedBorder {
@@ -86,6 +109,19 @@ $font4: 18px;
   font-weight: 700;
   margin-bottom: $length2*2;
 }
+
+%modalInput {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(160, 121, 100, .5);
+  padding: 7px 7px;
+  outline-style: none;
+}
+
+%modalH6 {
+  background-color: #5d403608;
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -129,4 +165,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+@keyframes swing {
+  15%{transform: translateX(5px);}
+  40%{transform: translateX(-5px);}
+  65%{transform: translateX(2px);}
+  85%{transform: translateX(-2px);}
+  100%{transform: translateX(0px);}
 }

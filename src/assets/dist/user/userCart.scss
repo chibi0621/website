@@ -1,25 +1,73 @@
 @import '../../all.scss';
 
-.btnCoupon {
-  background-color: $color3;
+.navbarBox {
+  padding: 0px 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+table, input, button {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.paddingX {
+  padding: 0px 150px;
+}
+
+.cartTitle {
   color: $color1;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  padding: 0px 100px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #8c645096;
+}
+
+.trashBtn {
+  border: 0;
+  background-color: transparent;
+}
+
+.btnCoupon {
+  font-family: 'Libre Baskerville', serif;
+  color: #000;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  opacity: 1;
+  transition: .5s;
 }
 
 .btnCoupon:hover {
-  background-color: $color7;
-  color: $color2;
-  border: 1px solid $color1;
+  color: $color1;
+  background-color: #5d403611;
+  border: 0;
+  opacity: .9;
+  transform: scale(0.95);
 }
 
-.btnColor {
-  width: $length1*2 ;
-  background-color: $color2;
-  color: $color4;
+.orderBtn {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  width: $length1;
+  padding: 10px;
+  color: $color1;
+  background-color: #57443d11;
+  border: 0px;
+  border-radius: 10px;
+  opacity: 1;
+  transition: .5s;
 }
 
-.btnColor:hover {
-  width: $length1*2 ;
-  background-color: $color7;
+.orderBtn:hover {
   color: $color2;
-  border: 1px solid $color1;
+  background-color: transparent;
+  opacity: .9;
+  transform: scale(1.1);
 }
+

@@ -3,18 +3,18 @@
   aria-labelledby="exampleModalLabel" aria-hidden="true" ref="modal">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content border-0">
-        <div class="modal-header modalColor">
-          <h5 class="modal-title h5" id="exampleModalLabel">
-            <span>訂單細節</span>
+        <div class="modal-header">
+          <h5 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
+            <span>Order Details</span>
           </h5>
-          <button type="button" class="btn-close"
+          <button type="button" class="btn-close border border-0"
           data-bs-dismiss="modal" aria-label="Close">
           </button>
         </div>
         <div class="modal-body">
           <div class="row">
             <div class="col-md-4">
-              <h6 class="fw-bold mb-1 h6">用戶資料</h6>
+              <h6 class="modalH6 mb-2">用戶資料</h6>
               <table class="table">
                 <tbody v-if="tempOrder.user">
                   <tr>
@@ -37,7 +37,7 @@
               </table>
             </div>
             <div class="col-md-8">
-              <h6 class="fw-bold mb-1 h6">訂單細節</h6>
+              <h6 class="modalH6 mb-2">訂單細節</h6>
               <table class="table">
                 <tbody>
                   <tr>
@@ -72,8 +72,8 @@
                   </tr>
                 </tbody>
               </table>
-              <h6 class="fw-bold mb-1 h6">選購商品</h6>
-              <table class="table">
+              <h6 class="modalH6 mb-2">選購商品</h6>
+              <table class="modalTable">
                 <thead>
                   <tr>
                   </tr>
@@ -96,10 +96,10 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger"
+          <button type="button" class="modalCancelBtn"
           data-bs-dismiss="modal">取消
           </button>
-          <button type="button" class="btn btn-secondary"
+          <button type="button" class="modalCheckBtn"
           @click="$emit('update-order',tempOrder)">確認
           </button>
         </div>

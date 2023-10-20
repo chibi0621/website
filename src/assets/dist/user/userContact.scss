@@ -1,10 +1,36 @@
 @import '../../all.scss';
 
+.navbarBox {
+  padding: 0px 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.contactTitle {
+  color: $color1;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  padding: 0px 160px;
+}
+
+.contactBox {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
 .mapImg {
-  width: 500px;
+  width: 100%;
   height: auto;
 }
 
-.color1 {
-  color: $color1;
+.contactUlBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 50px 50px;
 }
+

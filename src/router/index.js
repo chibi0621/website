@@ -8,72 +8,76 @@ const routes = [
     component: HomeView,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
-  },
-  {
     path: '/dashboard',
     name: 'dashboard',
-    component: () => import('../views/DashBoard.vue'),
+    component: () => import('../views/dashboard/DashBoard.vue'),
     children: [
       {
         path: 'login',
-        component: () => import('../views/LoginPage.vue'),
+        component: () => import('../views/dashboard/LoginPage.vue'),
       },
       {
-        path: 'products',
-        component: () => import('../views/ProductList.vue'),
+        path: 'product',
+        component: () => import('../views/dashboard/ProductList.vue'),
       },
       {
-        path: 'orders',
-        component: () => import('../views/OrderList.vue'),
+        path: 'order',
+        component: () => import('../views/dashboard/OrderList.vue'),
       },
       {
-        path: 'coupons',
-        component: () => import('../views/CouponList.vue'),
+        path: 'coupon',
+        component: () => import('../views/dashboard/CouponList.vue'),
       },
     ],
   },
   {
     path: '/user',
     name: 'user',
-    component: () => import('../views/UserBoard.vue'),
+    component: () => import('../views/user/UserBoard.vue'),
     children: [
       {
         path: 'product',
-        component: () => import('../views/UserProductList.vue'),
+        component: () => import('../views/user/UserProductList.vue'),
       },
       {
         path: 'cart',
-        component: () => import('../views/UserCart.vue'),
+        component: () => import('../views/user/UserCart.vue'),
       },
       {
         path: 'product/:productId',
-        component: () => import('../views/UserProduct.vue'),
+        component: () => import('../views/user/UserProduct.vue'),
       },
       {
         path: 'order',
-        component: () => import('../views/UserOrder.vue'),
+        component: () => import('../views/user/UserOrder.vue'),
       },
       {
         path: 'login',
-        component: () => import('../views/UserLogin.vue'),
+        component: () => import('../views/user/UserLogin.vue'),
       },
       {
         path: 'order/fail',
-        component: () => import('../views/OrderFail.vue'),
+        component: () => import('../views/user/OrderFail.vue'),
       },
       {
         path: 'checkout/:orderId',
-        component: () => import('../views/UserCheckout.vue'),
+        component: () => import('../views/user/UserCheckout.vue'),
       },
       {
-        path: 'contact',
-        component: () => import('../views/UserContact.vue'),
+        path: 'store_location',
+        component: () => import('../views/user/UserStoreLocation.vue'),
+      },
+      {
+        path: 'promotional_activity',
+        component: () => import('../views/user/UserPromotional.vue'),
+      },
+      {
+        path: 'about_chibi',
+        component: () => import('../views/user/AboutChibi.vue'),
+      },
+      {
+        path: 'contact_us',
+        component: () => import('../views/user/UserContact.vue'),
       },
     ],
   },

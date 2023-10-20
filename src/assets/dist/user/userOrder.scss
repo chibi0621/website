@@ -1,21 +1,58 @@
 @import '../../all.scss';
 
+.navbarBox {
+  padding: 0px 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
 .orderTitle {
-  font-weight: bold;
-  font-size: $font2*2;
   color: $color1;
-  margin-bottom: $length2*2 ;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  padding: 0px 180px;
 }
 
-.btnColor {
-  width: $length1*1.5;
+.orderBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.orderH5 {
+  width: 100%;
+  color: $color1;
+  background-color: #5d403608;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.fieldBox {
+  width: 100%;
+}
+
+.orderBtn {
+  width: $length1*1;
   background-color: $color2;
-  color: $color4;
+  color: #fff;
+  padding: 7px 0px;
+  letter-spacing: 1px;
+  border: 0;
+  opacity: 1;
+  transition: .5s;
 }
 
-.btnColor:hover {
-  width: $length1*1.5;
+.orderBtn:hover {
   background-color: $color7;
   color: $color2;
   border: 1px solid $color1;
+  opacity: .8;
+  transform: scale(.9);
 }

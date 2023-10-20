@@ -1,20 +1,79 @@
 @import '../../all.scss';
 
-.btnColor {
-  border: 1px solid $color2;
-  border-radius: $length2;
-  background-color: $color8;
+
+.newProductBtn {
+  width: 10%;
+  padding: 8px 0px;
   color: $color2;
-  width: $length1/4*3 ;
-  height: $length2*4 ;
-  margin-right: $length2*3 ;
+  background-color: transparent;
+  border: 1px solid $color2;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: .5s;
 }
 
-.btnColor:hover {
-  background-color: $color2;
-  color: blanchedalmond;
-  width: $length1/4*3 ;
-  height: $length2*4 ;
-  margin-right: $length2*3 ;
+.newProductBtn:hover {
+  background-color: rgba(128, 128, 128, 0.107);
+  border: 0;
+  color: #000;
+  opacity: .7;
+  transform: scale(1.1);
 }
 
+.productListTable {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .newProductBtn {
+    width: 20%;
+  }
+
+  .productListTable {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .newProductBtn {
+    width: 18%;
+  }
+  
+  .productListTable {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newProductBtn {
+    width: 15%;
+  }
+
+  .productListTable {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .newProductBtn {
+    width: 12%;
+  }
+
+  .productListTable {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newProductBtn {
+    width: 10%;
+  }
+
+  .productListTable {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+}

@@ -1,58 +1,93 @@
 @import '../../all.scss';
 
+.navbarBox {
+  padding: 0px 100px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+
 .container {
-  > .breadBox {
-    @extend %flexbox4;
-    width: $length1*5 ;
-    height: $length2*6 ;
-    background-color: $color8;
+  font-family: 'Libre Baskerville', serif;
+}
 
-    > ol {
-      > li {
-        font-size: $font4;
+.breadBox {
+  @extend %flexbox4;
+  width: $length1*5 ;
+  height: $length2*6 ;
+  background-color: $color8;
+  padding: 0px 0px 0px 15px;
+}
+
+ol {
+  > li {
+    font-size: $font4;
+
+    > a {
+      text-decoration: none;
+    }    
+  }
   
-        > a {
-          text-decoration: none;
-        }
+}
 
-        > .cart {
-          color: $color2;
-        }
-        
-      }
-      
-      > .breadLi {
-        padding-top: $length2/5 ;
-      }
-    }
-  }
+.cart {
+  color: $color2;
+}
 
-  > .productDetail {
-    > div {
-      > .productName {
-        color: $color1;
-        font-size: $length2*3 ;
-        margin-bottom: $length2*2 ;
-      }
+.breadLi {
+  padding-top: $length2/5 ;
+}
 
-      > .text {
-        color: $color2;
-        font-size: $length2*2 ;
-        margin-left: $length2/2 ;
-        margin-bottom: $length2*2;
-      }
-      
-      > .priceText {
-        color: $color1;
-        font-size: $length2*2 ;
-        margin-bottom: $length2*2;
-      }
-      
-      > .btnColor {
-        background-color: $color2;
-        color: blanchedalmond;
-      }
-    }
+.breadHr {
+  color: $color1;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 
-  }
+
+.productName {
+  color: $color1;
+  font-size: $length2*3 ;
+  margin-bottom: $length2*2 ;
+}
+
+.text {
+  color: $color1;
+  font-size: $length2*2 ;
+  margin-left: $length2/2 ;
+  line-height: 20px;
+}
+
+.textBox {
+  color: #000;
+  margin-left: $length2/2 ;
+  background-color: #5d403608;
+  font-weight: bold;
+}
+
+.priceText {
+  color: $color1;
+  font-size: $length2*2 ;
+  margin-bottom: $length2*2;
+}
+
+.addProductBtn {
+  width: $length1*1;
+  background-color: $color2;
+  color: #fff;
+  padding: 7px 0px;
+  letter-spacing: 1px;
+  border: 0;
+  opacity: 1;
+  transition: .5s;
+}
+
+.addProductBtn:hover {
+  background-color: $color7;
+  color: $color2;
+  border: 1px solid $color1;
+  opacity: .8;
+  transform: scale(.9);
 }

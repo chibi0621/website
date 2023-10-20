@@ -22,17 +22,6 @@ var routes = [{
   name: 'home',
   component: _HomeView["default"]
 }, {
-  path: '/about',
-  name: 'about',
-  // route level code-splitting
-  // this generates a separate chunk (about.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
-  component: function component() {
-    return Promise.resolve().then(function () {
-      return _interopRequireWildcard(require('../views/AboutView.vue'));
-    });
-  }
-}, {
   path: '/dashboard',
   name: 'dashboard',
   component: function component() {
@@ -131,6 +120,27 @@ var routes = [{
     component: function component() {
       return Promise.resolve().then(function () {
         return _interopRequireWildcard(require('../views/UserContact.vue'));
+      });
+    }
+  }, {
+    path: 'promotional_activity',
+    component: function component() {
+      return Promise.resolve().then(function () {
+        return _interopRequireWildcard(require('../views/UserPromotional.vue'));
+      });
+    }
+  }, {
+    path: 'about_chibi',
+    component: function component() {
+      return Promise.resolve().then(function () {
+        return _interopRequireWildcard(require('../views/AboutChibi.vue'));
+      });
+    }
+  }, {
+    path: 'common_problem',
+    component: function component() {
+      return Promise.resolve().then(function () {
+        return _interopRequireWildcard(require('../views/CommonProblem.vue'));
       });
     }
   }]

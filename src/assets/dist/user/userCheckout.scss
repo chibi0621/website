@@ -1,21 +1,60 @@
 @import '../../all.scss';
 
-form {
-  > .orderSuccess {
-    font-size: $length2*5 ;
-    color: $colorSuccess;
-    margin-bottom: $length2*6 ;
-    text-align: center;
-  }
+.navbarBox {
+  padding: 0px 100px;
+}
 
-  > .orderBox {
-    font-size: $length2*3;
-    margin-bottom: $length2/2 ;
-    color: $color1;
-  }
-  
-  > table > thead > .fontPadding {
-    padding-left: $length2;
-    font-weight: bold;
-  }
+footer {
+  margin-top: 100px;
+}
+
+form {
+  font-family: 'Libre Baskerville', serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.checkoutTitle {
+  color: $color1;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  padding: 40px 80px 0px 80px;
+}
+
+.orderSuccess {
+  font-size: $length2*5 ;
+  color: $colorSuccess;
+  margin-bottom: $length2*6 ;
+  text-align: center;
+}
+
+.checkoutH6 {
+  width: 100%;
+  color: $color1;
+  background-color: #5d403608;
+  font-family: 'Libre Baskerville', serif;
+  padding: 0px 25px;
+  font-weight: bold;
+}
+
+.payBtn {
+  width: 100%;
+  padding: 12px 15px;
+  border: 0;
+  background-color: rgba(128, 128, 128, 0.107);
+  color: #000;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: .5s;
+}
+
+.payBtn:hover {
+  color: $color1;
+  background-color: transparent;
+  border: 1px solid $color1;
+  border-radius: 10px;
+  opacity: .7;
+  transform: scale(1.1);
 }

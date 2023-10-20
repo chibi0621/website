@@ -1,0 +1,245 @@
+@import '@/assets/all.scss';
+
+.footerBox {
+  @extend %flexbox2;
+  width: 100%;
+  font-family: 'Libre Baskerville', serif;
+  padding: 0px 5px 0px 40px;
+}
+
+.rightFooterBox {
+  @extend %flexbox11;
+}
+
+.footerLogo {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.contactUsLink {
+  background-color: #5d403617;
+  color: #000;
+  margin-left: 10px;
+  padding: 3px 12px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $color2;
+  opacity: 1;
+  transition: .5s;
+}
+
+.contactUsLink:hover {
+  color: $color1;
+  border-bottom: 1px solid gray;
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+.mail {
+  background-color: #5d403617;
+  color: #000;
+  margin-left: 10px;
+  padding: 3px 8px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.copyright {
+  font-size: .75rem;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.hrefBox {
+  width: 33%;
+  text-align: center;
+}
+
+.hrefBox > a {
+  vertical-align: middle;
+  opacity: 1;
+  transition: .5s;
+}
+
+.hrefBox > a:hover {
+  opacity: .7;
+  transform: scale(.9);
+}
+        
+.hrefBox > a > img {
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+  width: 13%;
+  height: 13%;
+}
+
+//RWD SET
+@media screen and (max-width: 600px) {
+  footer > .footerBox {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .contactUsLink {
+    font-size: 14px;
+  }
+
+  footer > .footerBox > .rightFooterBox > .mail {
+    font-size: 12px;
+    margin-bottom: 30px;
+
+    > svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  footer > .footerBox > .rightFooterBox > .copyright {
+    font-size: .1rem;
+    margin-bottom: 20px;
+  }
+
+  footer > .footerBox > .hrefBox > a > img {
+    margin: 0rem .7rem .7rem .7rem;
+    width: 22%;
+    height: 22%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer > .footerBox {
+    padding: 0px 10px 0px 30px;
+  }
+
+  .contactUsLink {
+    font-size: 14px;
+  }
+
+  footer > .footerBox > .rightFooterBox > .mail {
+    font-size: 12px;
+    margin-bottom: 30px;
+
+    > svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  footer > .footerBox > .rightFooterBox > .copyright {
+    font-size: .1rem;
+    margin-bottom: 20px;
+  }
+
+  footer > .footerBox > .hrefBox {
+    width: 42%;
+  }
+
+  footer > .footerBox > .hrefBox > a > img {
+    margin: 0rem .6rem .6rem .6rem;
+    width: 16%;
+    height: 16%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer > .footerBox {
+    padding: 0px 10px 0px 30px;
+  }
+  .contactUsLink {
+    font-size: 15px;
+  }
+
+  footer > .footerBox > .rightFooterBox > .mail {
+    font-size: 13px;
+    margin-bottom: 40px;
+
+    > svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  footer > .footerBox > .rightFooterBox > .copyright {
+    font-size: .25rem;
+    margin-bottom: 20px;
+  }
+
+  footer > .footerBox > .hrefBox {
+    width: 40%;
+  }
+
+  footer > .footerBox > .hrefBox > a > img {
+    margin: 0rem .9rem .9rem .9rem;
+    width: 15%;
+    height: 15%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer > .footerBox {
+    padding: 0px 0px 0px 35px;
+  }
+  .contactUsLink {
+    font-size: 16px;
+  }
+
+  footer > .footerBox > .rightFooterBox > .mail {
+    font-size: 14px;
+    margin-bottom: 40px;
+
+    > svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  footer > .footerBox > .rightFooterBox > .copyright {
+    font-size: .5rem;
+    margin-bottom: 20px;
+  }
+
+  footer > .footerBox > .hrefBox {
+    width: 38%;
+  }
+
+  footer > .footerBox > .hrefBox > a > img {
+    margin: 0rem 1rem 1rem 1rem;
+    width: 14%;
+    height: 14%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer > .footerBox {
+    padding: 0px 5px 0px 40px;
+  }
+  .contactUsLink {
+    font-size: 18px;
+  }
+
+  footer > .footerBox > .rightFooterBox > .mail {
+    font-size: 15px;
+    margin-bottom: 40px;
+
+    > svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  footer > .footerBox > .rightFooterBox > .copyright {
+    font-size: .75rem;
+    margin-bottom: 30px;
+  }
+
+  footer > .footerBox > .hrefBox {
+    width: 33%;
+  }
+
+  footer > .footerBox > .hrefBox > a > img {
+    margin: 0rem 1.5rem 1.5rem 1.5rem;
+    width: 12%;
+    height: 12%;
+  }
+}

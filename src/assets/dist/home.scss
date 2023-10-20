@@ -1,520 +1,407 @@
 @import '../all.scss';
 
 header {
-  padding-top: $length2/2 ;
-  text-align: center;
-  background-color: $color2;
-  color: blanchedalmond;
-
-  > h6 > .truck {
-    padding-bottom: $length2/5 ;
-  }
+  background-color: $color7;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 50px;
 }
 
-nav {
+.positionSet {
   @extend %flexbox2;
-  margin-top: $length2*3 ;
-  background-color: $color4;
-  height: $length1;
+  margin: 0 auto;
+  padding: 0;
+}
 
-  > .brandBox{
-    @extend %flexbox1;
-    margin-top: $length2;
-    width: $length4*3 ;
-    padding-left: $length2*4 ;
-    padding-bottom: $length2*4 ;
-    padding-top: $length2*4 ;
-
-    > .logo {
-      width: $length1*2.75 ;
-      height: auto;
-    }
-  }
-
-  > .search {
-    display: flex;
-    width: $length1*2.25 ;
-    margin-top: $length1/10 ;
+.brandBox{
+  transition: all .5s ease;
+}
   
-    > .searchBtn {
-      background-color: $color4;
-    }
-  }
+.logo {
+  max-width: 50%;
+  height: auto;
+  padding: 4px 0px 4px 20px;
+  vertical-align: middle;
+  transition: .5s;
+}
+
+.logo:hover {
+  transform: scale(0.9);
+}
   
-  > .topBox {
-    @extend %flexbox2;
-    width: $length1;
-    margin-top: $length1/10 ;
+.navBox {
+  @extend %flexbox6;
+  margin: 0;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
+  margin-left: 100px;
+}
+
+.toggleBtn {
+  border: 0;
+  outline: none;
+}
+
+
+.searchBtn {
+  background-color: transparent;
+  border: 0;
+
+  > svg {
+    margin-right: 1rem;
+  }
+}
+
+.searchBtn:hover {
+  transform: scale(1.3);
+
+  > svg {
+    fill: #000;
+  } 
+}
+
+.linkBox {
+  justify-content: space-around;
+}
+
     
-    > .icons {
-      @extend %flexbox1;
-      width: $length1*2.5 ;
-      padding: 0;
-
-      > .pt1{
-        padding-top: $length2;
-      }
-    }
-
-    > .offcanvasButton {
-      background-color: $color8;
-      border: $color4;
-      margin-right: $length2*3 ;
-    }
-  }
-
-  > div {
-    > div > div > .logoText {
-      width: $length4*2 ;
-      height: auto;
-      margin-left: $length2;
-      border-radius: $length2/2 ;
-    }
-    > div > .pe4 {
-      padding-right: $length2*2 ;
-  
-      > .liBackground {
-        background-image: url(../img/titleIcon.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-
-      > li > .hrColor {
-        border: $length3/5 solid $color14;
-      }
-
-      > li > a > .asideSale {
-        width: $length1*4.5 ;
-        height: auto;
-      }
-
-      > .liContact {
-        @extend %flexbox4;
-        margin-bottom: $length2;
-
-        > p {
-          margin-bottom: 0;
-          margin-left: $length2;
-          color: $color5;
-        }
-      }
-    }
-  }
+.navLink {
+  width:800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
-main {
-  > .mainCarousel {
-    width: $length1*4.5 ;
-    height: auto;
-    padding: $length1/4 ;
-    margin: 0 auto;
-    margin-top: $length2*4 ;
-  }
-
-  > .sectionCarousel {
-    width: $length1*4.25 ;
-    height: auto;
-    padding: $length1/2 ;
-    margin: 0 auto;
-
-    > .title3 {
-      color: $color2;
-      text-shadow: $length3 $length3 $color4;
-      letter-spacing: $length2/10*3 ;
-    }
-  }
-
-  > .sectionCards {
-    padding: $length1/2 ;
-    margin: 0 auto;
-
-    > h3 {
-      color: $color2;
-      text-shadow: $length3 $length3 $color4;
-      letter-spacing: $length2/10*3 ;
-      font-size: $font3*2 ;
-    }
-   
-    > div > div {
-
-      > .cardImg {
-        margin: 0 auto;
-        padding: $length1/2 ;
-        width: $length1*4.5 ;
-        height: auto;
-      }
-
-      > div > .nameColor {
-        color: $color1;
-        font-weight: bold;
-      }
-
-      > .cardFooterBox {
-        text-align: end;
-  
-        > .cardBtn {
-          border: 0px;
-          margin-left: $length1/4 ;
-        }
-      }
-    }
-  }
-
-  > .articleCards {
-    width: $length1*4.25 ;
-    height: auto;
-    padding: $length1/4 ;
-    margin: 0 auto;
-
-    > div > .cardBg {
-      background-color: rgba(33, 37, 41, 0.03);
-
-      > .articleImg {
-        width: $length1*4.5 ;
-        height: auto;
-        margin: 0 auto;
-        padding-top: $length1/2 ;
-        padding-left: $length1/2 ;
-        padding-right: $length1/2 ;
-      }
-
-      > div {
-        > .titleColor {
-          color: $color2;
-          font-weight: bold;
-        }
-  
-        > .pColor {
-          color: $color1;
-        }
-      }
-
-      > .cardFooterBox {
-        text-align: end;
-
-        > .btnColor {
-          background-color: $color1;
-          color: blanchedalmond;
-        }
-      }
-    }
-  }
-}
-
-.backTopBox {
-  margin-bottom: $length2*2 ;
-  margin-right: $length2*2 ;
-
-  > .backTop {
-    width: $length2*12 ;
-    height: auto;
-  }
-}
-
-footer {
-  background-color: $color2;
-
-  >.footerBox {
-    @extend %flexbox3;
-
-    > .ulBox {
-      @extend %flexbox2;
-      margin-bottom: $length2*6 ;
-      margin-top: $length2*6 ;
-
-      > li > a{
-        margin: $length2*5 ;
-        font-weight: bold;
-        color: blanchedalmond;
-        letter-spacing: $length2/10 ;
-      }
       
-      > li > a:hover{
-        margin: $length2*5 ;
-        font-weight: bold;
-        color: $color7;
-        letter-spacing: $length2/10 ;
-      }
-    }
+.navLink > a {
+  width: 100%;
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  transition: .5s;
+  opacity: 1;
+}
 
-    .logoBox {
-      @extend %flexbox1;
-    }
+.navLink > a:hover {
+  color: $color2;
+  opacity: .9;
+  transform: scale(1.1);
+}
 
-    > .footerLogo {
-      width: $length1*2.5 ;
-      height: auto;
-    }
+section {
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
 
-    > .boxCenter {
-      @extend %flexbox1;
-    }
+section > h2 {
+  padding: 100px 120px 0px 120px;
+  font-size: 23px;
+  font-family: 'Libre Baskerville', serif;
+  color: $color1;
+}
 
-    > .footerColor {
-      color: $color6;
-    }
-  }
+section > h3 {
+  padding: 50px 0px;
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.boxCenter {
+  @extend %flexbox1;
+  padding: 0px 500px;
+}
+
+.boxCenter > a {
+  text-align: center;
+  opacity: 1;
+  transition: .5s;
+}
+
+.boxCenter > a:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+
+.boxCenter > a > img {
+  max-width: 45%;
+}
+    
+.followUsBox {
+  @extend %flexbox2;
+  padding: 0px 120px;
+  margin: 0 auto;
+}
+
+.followUsBox > img {
+  max-width: 15%;
+  height: auto;
+}
+
+.locationBox {
+  @extend %flexbox10;
+  max-width: 100%;
+  min-height: 280px;
+  background-image: url(../img/storeLocation.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding: 200px 0px;
+}
+
+.locationBox > h5 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  padding: 0px 50px;
+  margin-bottom: 10px;
+}
+
+.locationBox > h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  padding: 0px 20px;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  background-color: #00000017;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.locationBox > a {
+  color: #000;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px;
+  opacity: 1;
+  transition: .5s;
+  padding: 0px 0px 0px 480px;
+}
+
+.locationBox > a:hover {
+  color: #fff;
+  opacity: .8;
+  transform: scaleY(1.2);
+  transform: scaleX(.99);
+}
+
+.locationBox > a:active {
+  color: $color1;
+}
+
+.locationBox> svg {
+  margin-bottom: .2rem;
+}
+
+
+.carouselProductBox {
+  padding: 100px 200px 30px 200px;
+}
+
+.homeProductBtn {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.homeProductBtn > div > h5 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.cardBox {
+  @extend %flexbox2;
+}
+
+.cardBox > p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.cardBox > button {
+  transition: .5s;
+  opacity: 1;
+  padding: 0;
+} 
+
+.cardBox > button:hover {
+  color: $color1;
+  opacity: .6;
+  transform: scale(.9);
+}
+
+.footerBox {
+  @extend %flexbox2;
+  width: 100%;
+  font-family: 'Libre Baskerville', serif;
+  padding: 0px 5px 0px 40px;
+}
+
+.rightFooterBox {
+  @extend %flexbox11;
+}
+
+.footerLogo {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.contactUsLink {
+  background-color: #5d403617;
+  color: #000;
+  margin-left: 10px;
+  padding: 3px 12px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $color2;
+  opacity: 1;
+  transition: .5s;
+}
+
+.contactUsLink:hover {
+  color: $color1;
+  border-bottom: 1px solid gray;
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+.mail {
+  background-color: #5d403617;
+  color: #000;
+  margin-left: 10px;
+  padding: 3px 8px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.copyright {
+  font-size: .75rem;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.hrefBox {
+  width: 33%;
+  text-align: center;
+}
+
+.hrefBox > a {
+  vertical-align: middle;
+  opacity: 1;
+  transition: .5s;
+}
+
+.hrefBox > a:hover {
+  opacity: .7;
+  transform: scale(.9);
+}
+        
+.hrefBox > a > img {
+  margin: 0rem 1.5rem 1.5rem 1.5rem;
+  width: 13%;
+  height: 13%;
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  .brandBox {
     display: none;
   }
-  nav {
-    margin-top: 0;
 
-    > .brandBox {
-      width: $length4*2 ;
-      padding: 0;
-
-      > .logo {
-        width: $length1*3.5 ;
-        height: auto;
-      }
-    }
-
-    > .search {
-      display: none;
-    }
-
-    > .topBox > .icons {
-      display: none;
-    }
-  }
-  main {
-    > .sectionCards {
-      display: none;
-    }
-
-    > .articleCards {
-      display: none;
-      margin-bottom: $length4;
-    }
-  }
-  .backTopBox {
+  .navBox {
+    margin: 0 ;
     text-align: center;
-    margin: 0;
-    margin-bottom: $length2;
-
-    > a > .backTop {
-      width: $length2*12 ;
-    }
   }
-  footer {
-    > .footerBox {
-      > .ulBox {
-        display: none;
-      }
 
-      > .logoBox> .footerLogo {
-        width: $length1*2.5 ;
-        height: auto;
-      }
-
-      > .footerColor {
-        font-size: $font1;
-      }
-    }
+  .navBox > button {
+    border: 0;
   }
+
+  .navBox > button:focus {
+    border: 0;
+  }
+
+  .navBox > button:active {
+    border: 0;
+  }
+
+  .searchBtn > svg {
+    margin-right: 0;
+  }
+
+  .linkBox {
+    text-align: start;
+  }
+
+  .navLink > a {
+    text-align: start;
+    margin: 10px 3px 3px 3px;
+    padding: 3% 0px 0px 2%;
+  }
+
+  .navLink > a:hover {
+    opacity: .9;
+    transform: scaleY(1.1);
+  }
+
+  .searchBtn {
+    margin: 10px 3px 10px 3px;
+    padding: 1% 0px 0px 2%;
+  }
+
 }
 
 @media screen and (min-width: 600px) {
-  header {
+  .brandBox {
     display: none;
   }
 
-  nav {
-    margin-top: 0;
-
-    > .brandBox {
-      width: $length4*2.5 ;
-      padding: 0;
-    }
-
-    > .search {
-      display: none;
-    }
-
-    > .topBox > .icons {
-      display: none;
-    }
-  }
-
-  main {
-    > .sectionCards {
-      display: none;
-    }
-    > .articleCards {
-      display: none;
-    }
-  }
-
-  .backTopBox {
+  .navBox {
+    margin-left: 0px;
     text-align: center;
-    margin: 0;
-    margin-bottom: $length2;
-
-    > a > .backTop {
-      width: $length2*12 ;
-      height: auto;
-    }
   }
 
-  footer {
-    > .footerBox {
-      > .ulBox {
-        display: none;
-      }
-
-      > .logoBox> .footerLogo {
-        width: $length1*3 ;
-        height: auto;
-      }
-
-      > .footerColor {
-        font-size: $font1;
-      }
-    }
+  .searchBtn > svg {
+    margin-right: 0;
   }
+
+  .navLink > a {
+    margin: 3px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
-  nav {
-    > .brandBox {
-      width: $length4*2.5 ;
-      padding: 0;
-    }
-    
-    > .search {
-      display: flex;
-    }
-
-    > .topBox {
-      > .icons {
-        display: none;
-      }
-
-      > .offcanvasButton {
-        margin-left: $length2*10 ;
-      }
-    }
+  .brandBox {
+    display: none;
   }
 
-  .backTopBox {
+  .navBox {
+    margin-left: 0px;
+  }
+  
+  .linkBox {
     text-align: center;
-    margin: 0;
-    margin-bottom: $length2*2 ;
-
-    > a > .backTop {
-      width: $length2*14 ;
-      height: auto;
-    }
-  }
-
-  footer {
-    > .footerBox {
-      > .ulBox {
-        display: flex;
-        margin-bottom: $length2*4 ;
-
-        > li > a{
-          margin: $length2*3 ;
-        }
-      }
-
-      > .logoBox > .footerLogo {
-        margin-bottom: $length2*2 ;
-      }
-
-      > .footerColor {
-        font-size: $font2;
-      }
-    }
   }
 }
 
 @media screen and (min-width: 992px) {
-  nav {
-    > .brandBox {
-      width: $length4*2.5 + $length3*6 ;
-      padding: 0;
-    }
+  .brandBox {
+    display: block;
   }
 
-  main {
-    > .sectionCards {
-      display: block;
-    }
-
-    > .articleCards {
-      display: block;
-    }
-  }
-
-  .backTopBox {
-    text-align: end;
-    margin-bottom: $length2*2 ;
-    margin-right: $length2*2 ;
-
-    > a > .backTop {
-      width: $length2*12 ;
-      height: auto;
-    }
-  }
-
-  footer {
-    > .footerBox {
-      > .ulBox > li > a{
-        font-size: $font3;
-        margin: $length2*4 ;
-      }
-
-      > .logoBox > .footerLogo {
-        margin-bottom: 0;
-      }
-
-      > .footerColor {
-        font-size: $font3;
-      }
-    }
+  .navBox {
+    margin-left: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  header {
+  .brandBox {
     display: block;
   }
-  
-  nav {
-    margin-top: $length2*3 ;
 
-    > .brandBox {
-      width: $length4*3 ;
-      padding-left: $length2*4 ;
-      padding-bottom: $length2*4 ;
-      padding-top: $length2*4 ;
-    }
-    
-    > .topBox> .icons {
-      display: flex;
-    }
-  }
-
-  > .backTopBox > .backTop {
-    width: $length2*12 ;
-    height: auto;
-  }
-
-  footer {
-    > .footerBox {
-      > .ulBox > li > a{
-        margin: $length2*5 ;
-      }
-    }
-  }
-
-  > .logoBox >.footerLogo {
-    margin-bottom: $length2*2 ;
+  .navBox {
+    margin-left: 100px;
   }
 }
