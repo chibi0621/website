@@ -1,27 +1,107 @@
 @import '../../all.scss';
 
-.navbarBox {
-  padding: 0px 100px;
-}
-
-footer {
-  margin-top: 100px;
-}
-
 .locationTitle {
   color: $color1;
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 1px;
-  margin-bottom: 50px;
-  padding: 0px 250px;
+  margin-bottom: 5%;
+  padding: 0 11%;
 }
 
-.paddingLeft {
-  padding-left: 60px;
-}
-
-.color1 {
+.paddingColor {
   color: #000;
   font-family: 'Libre Baskerville', serif;
+}
+
+.leftMarginBottom {
+  margin-bottom: 7%;
+}
+
+.rightMarginBottom {
+  margin-bottom: 7%;
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .locationTitle{
+    padding: 0 7%;
+  }
+
+  .leftMarginBottom {
+    margin-bottom: 0%;
+  }
+
+  .paddingColor {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .locationTitle{
+    padding: 0 8%;
+  }
+
+  .leftMarginBottom {
+    margin-bottom: 0%;
+  }
+
+  .paddingColor {
+    padding-left: 18%;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .locationTitle{
+    padding: 0 9%;
+  }
+
+  .leftMarginBottom {
+    margin-bottom: 15%;
+  }
+
+  .rightMarginBottom {
+    margin-bottom: 15%;
+  }
+
+  .paddingColor {
+    padding: 2%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .locationTitle{
+    padding: 0 10%;
+  }
+
+  .leftMarginBottom {
+    margin-bottom: 10%;
+  }
+
+  .rightMarginBottom {
+    margin-bottom: 10%;
+  }
+
+  .paddingColor {
+    padding: 1%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .locationTitle{
+    padding: 0 11%;
+  }
+
+  .leftMarginBottom {
+    margin-bottom: 7%;
+  }
+
+  .rightMarginBottom {
+    margin-bottom: 7%;
+  }
+
+  .paddingColor {
+    padding: 0;
+  }
 }
 

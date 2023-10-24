@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid">
-    <h4 class="fs-4 mt-4 mb-5 aboutUsTitle">
+    <h4 class="fs-4 aboutUsTitle">
       <span class="p-3">About Us 關於我們</span>
       <hr>
     </h4>
-    <div class="row">
+    <div class="row aboutUsBox">
       <div class="col-md-8">
-        <h6 class="fs-5 fw-bold mb-4 aboutUsH6">「源自於對日常穿著的熱忱，同時又喜歡簡單的感覺。」</h6>
+        <h6 class="fw-bold mb-4 aboutUsH6">「源自於對日常穿著的熱忱，同時又喜歡簡單的感覺。」</h6>
         <p class="aboutUsContent">
           Chibi 於2010年成立至今已有七家分店遍佈大台北地區，簡約風格深受輕熟齡女性喜愛。
           <br>
@@ -14,7 +14,7 @@
         </p>
         <img src="@/assets/img/aboutPageA.png" alt="" class="w-100 aboutUsImg">
         <hr/>
-        <h5 class="fs-4 mb-5 aboutUsH5">品牌理念</h5>
+        <h5 class="mb-5 aboutUsH5">品牌理念</h5>
         <p class="aboutUsContent">
           我們期許 Chibi 不只是服飾品牌，也是可以分享「意識生活 Conscious Living」的理念平台，
           透過兼具美感及舒適度、功能性、百搭不易退流行的產品，來展現每個人獨特的美麗特質。
@@ -23,7 +23,7 @@
         </p>
         <img src="@/assets/img/aboutPageB.png" alt="" class="w-100 aboutUsImg">
         <hr/>
-        <h5 class="fs-4 mb-5 aboutUsH5">友善企業</h5>
+        <h5 class="mb-5 aboutUsH5">友善企業</h5>
         <p class="aboutUsContent">
           我們是一個以友善為出發成長的企業，
           我們致力於在一個兼具包容性、多元化及充滿合作熱情的工作環境中培養創造力和開放性的員工。
@@ -31,7 +31,7 @@
         </p>
         <img src="@/assets/img/aboutPageC.png" alt="" class="w-100 aboutUsImg">
         <hr/>
-        <h5 class="fs-4 mb-5 aboutUsH5">響應環保</h5>
+        <h5 class="mb-5 aboutUsH5">響應環保</h5>
         <p class="aboutUsContent">
           為了保護我們的環境，將環保理念納入公司的核心。
           為自備購物袋的顧客提供20元的折價優惠，而購物袋使用可回收的環保材質，以減少對環境的影響。

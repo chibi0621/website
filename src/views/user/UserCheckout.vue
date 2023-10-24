@@ -1,7 +1,7 @@
 <template>
   <LoadingPlugin :active="isLoading"></LoadingPlugin>
   <div class="my-5 row justify-content-center">
-    <h4 class="fs-4 mt-4 mb-5 checkoutTitle">
+    <h4 class="fs-4 checkoutTitle">
       <span class="p-3">Order Summary 訂單資訊 </span>
       <hr>
     </h4>
@@ -15,7 +15,7 @@
       </svg>
       訂單已成立！
     </h5>
-    <form class="col-md-6" @submit.prevent="payOrder">
+    <form class="col-md-6 checkoutBox" @submit.prevent="payOrder">
       <h6 class="fs-4 mb-5 text-center checkoutH6">訂單內容</h6>
       <table class="table align-middle mb-5 table-hover">
         <thead height="28px">

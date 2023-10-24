@@ -1,12 +1,5 @@
 @import '../../all.scss';
 
-.navbarBox {
-  padding: 0px 100px;
-}
-
-footer {
-  margin-top: 100px;
-}
 
 form {
   font-family: 'Libre Baskerville', serif;
@@ -15,12 +8,20 @@ form {
   flex-wrap: wrap;
 }
 
+div, th, td {
+  font-family: 'Libre Baskerville', serif;
+}
+
 .checkoutTitle {
   color: $color1;
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 1px;
-  margin-bottom: 0px;
-  padding: 40px 80px 0px 80px;
+  margin-bottom: 5%;
+  padding: 0 11%;
+}
+
+.checkoutBox {
+  margin-bottom: 10%;
 }
 
 .orderSuccess {
@@ -57,4 +58,67 @@ form {
   border-radius: 10px;
   opacity: .7;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .checkoutTitle {
+    padding: 0 7%;
+  }
+
+  .checkoutBox {
+    padding: 0 12%;
+  }
+
+  .orderSuccess {
+    font-size: $length2*3 ;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .checkoutTitle {
+    padding: 0 8%;
+  }
+
+  .checkoutBox {
+    padding: 0 15%;
+  }
+
+  .orderSuccess {
+    font-size: $length2*3.5 ;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkoutTitle {
+    padding: 0 9%;
+  }
+
+  .checkoutBox {
+    padding: 0 ;
+  }
+
+  .orderSuccess {
+    font-size: $length2*4 ;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .checkoutTitle {
+    padding: 0 10%;
+  }
+
+  .orderSuccess {
+    font-size: $length2*4.5 ;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkoutTitle {
+    padding: 0 11%;
+  }
+
+  .orderSuccess {
+    font-size: $length2*5 ;
+  }
 }

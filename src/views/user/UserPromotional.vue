@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <h4 class="fs-4 mb-5 promotionalTitle">
+    <h4 class="fs-4 promotionalTitle">
       <span class="p-3">News 最新消息</span>
       <hr>
     </h4>

@@ -1,7 +1,7 @@
 <template>
   <LoadingPlugin :active="isLoading"></LoadingPlugin>
   <div class="my-5 row justify-content-center">
-    <h4 class="fs-4 mt-4 mb-5 orderTitle">
+    <h4 class="fs-4 orderTitle">
       <span class="p-3">Place An Order 送出訂單 </span>
       <hr>
     </h4>

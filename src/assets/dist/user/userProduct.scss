@@ -1,14 +1,5 @@
 @import '../../all.scss';
 
-.navbarBox {
-  padding: 0px 100px;
-}
-
-footer {
-  margin-top: 100px;
-}
-
-
 .container {
   font-family: 'Libre Baskerville', serif;
 }
@@ -46,6 +37,18 @@ ol {
   margin-bottom: 50px;
 }
 
+.aProductBox {
+  margin-bottom: 20%;
+}
+
+.figureBox {
+  text-align: center;
+}
+
+.productTextBox {
+  margin: 0 auto;
+  padding: 1% 1%;
+}
 
 .productName {
   color: $color1;
@@ -74,7 +77,7 @@ ol {
 }
 
 .addProductBtn {
-  width: $length1*1;
+  width: 25%;
   background-color: $color2;
   color: #fff;
   padding: 7px 0px;
@@ -90,4 +93,55 @@ ol {
   border: 1px solid $color1;
   opacity: .8;
   transform: scale(.9);
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .productTextBox {
+    padding: 0% 20%;
+  }
+
+  .addProductBtn {
+    width: 35% ;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .productTextBox {
+    padding: 0% 20%;
+  }
+
+  .addProductBtn {
+    width: 33% ;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .productTextBox {
+    padding: 1% 1%;
+  }
+
+  .addProductBtn {
+    width: 35% ;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .productTextBox {
+    padding: 1% 1%;
+  }
+
+  .addProductBtn {
+    width: 35% ;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productTextBox {
+    padding: 1% 1%;
+  }
+
+  .addProductBtn {
+    width: 25% ;
+  }
 }

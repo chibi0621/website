@@ -11,25 +11,18 @@ a {
   align-items: center;
 }
 
-.navbarBox {
-  padding: 0px 100px;
-}
-
-footer {
-  margin-top: 100px;
-}
-
 .loginTitle {
   color: $color1;
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 1px;
-  margin-bottom: 0px;
-  padding: 40px 80px 0px 80px;
+  margin-bottom: 5%;
+  padding: 0px 11%;
 }
 
 .formBox {
   font-family: 'Libre Baskerville', serif;
   margin:  0 auto;
+  margin-bottom: 10%;
 }
 
 .boxLeft {
@@ -37,7 +30,6 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 228px;
   border-top: 0;
   border-bottom: 0;
   border-left: 0;
@@ -142,13 +134,12 @@ footer {
 }
 
 .allRightBox {
-  margin-bottom: $length1/4;
+  // margin-bottom: $length1/4;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 85px 0px 0px 0px;
 }
 
 .sign {
@@ -175,8 +166,8 @@ footer {
 }
 
 .submitBtn {
-  width: 30%;
-  padding: 8px 0px;
+  width: 32%;
+  padding: 8px 2px;
   border: 0;
   background-color: rgba(128, 128, 128, 0.107);
   color: #000;
@@ -192,4 +183,121 @@ footer {
   border-radius: 10px;
   opacity: .7;
   transform: scale(1.1);
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .loginTitle {
+    padding: 0 7%;
+  }
+  
+  .boxLeft {
+    padding: 5% 9% 0 9%;
+    margin-bottom: 5%;
+  }
+
+  .hrBox {
+    display: block;
+    padding: 0 12%;
+    color: $color1;
+  }
+
+  .allRightBox {
+    padding: 5% 9% 0 9%;
+  }
+
+  .submitBtn {
+    width: 32%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .loginTitle {
+    padding: 0 8%;
+  }
+  
+  .boxLeft {
+    padding: 5% 9% 0 9%;
+    margin-bottom: 5%;
+  }
+
+  .hrBox {
+    display: block;
+    padding: 0 12%;
+    color: $color1;
+  }
+
+  .allRightBox {
+    padding: 5% 9% 0 9%;
+  }
+
+  .submitBtn {
+    width: 32%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .loginTitle {
+    padding: 0 9%;
+  }
+
+  .qBox {
+    width: 80%;
+  }
+
+  .hrBox {
+    display: none;
+  }
+
+  .boxRight {
+    width: 90%;
+  }
+
+  .member {
+    font-size: 1rem;
+  }
+
+  .submitBtn {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .loginTitle {
+    padding: 0 10%;
+  }
+
+  .qBox {
+    width: 80%;
+  }
+
+  .boxRight {
+    width: 90%;
+  }
+
+  .member {
+    font-size: 1.25rem;
+  }
+
+  .submitBtn {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .loginTitle {
+    padding: 0 11%;
+  }
+
+  .qBox {
+    width: 60%;
+  }
+
+  .boxRight {
+    width: 80%;
+  }
+
+  .submitBtn {
+    width: 32%;
+  }
 }

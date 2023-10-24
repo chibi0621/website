@@ -1,19 +1,11 @@
 @import '../../all.scss';
 
-.navbarBox {
-  padding: 0px 100px;
-}
-
-footer {
-  margin-top: 100px;
-}
-
 .orderTitle {
   color: $color1;
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 1px;
-  margin-bottom: 50px;
-  padding: 0px 180px;
+  margin-bottom: 5%;
+  padding: 0px 11%;
 }
 
 .orderBox {
@@ -23,6 +15,7 @@ footer {
   align-items: flex-start;
   margin: 0 auto;
   font-family: 'Libre Baskerville', serif;
+  margin-bottom: 10%;
 }
 
 .orderH5 {
@@ -39,7 +32,7 @@ footer {
 }
 
 .orderBtn {
-  width: $length1*1;
+  width: 20%;
   background-color: $color2;
   color: #fff;
   padding: 7px 0px;
@@ -56,3 +49,51 @@ footer {
   opacity: .8;
   transform: scale(.9);
 }
+
+//RWD
+@media screen and (max-width: 600px) {
+  .orderTitle {
+    padding: 0 7%;
+  }
+
+  .orderBox {
+    padding: 0px 14%;
+  }
+
+  .orderBtn {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .orderTitle {
+    padding: 0 8%;
+  }
+
+  .orderBox {
+    padding: 0px 14%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .orderTitle {
+    padding: 0 9%;
+  }
+
+  .orderBox {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .orderTitle {
+    padding: 0px 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .orderTitle {
+    padding: 0px 11%;
+  }
+}
+

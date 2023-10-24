@@ -1,30 +1,144 @@
 @import '../../all.scss';
 
-.navbarBox {
-  padding: 0px 100px;
-}
-
-footer {
-  margin-top: 100px;
-}
-
 .alertBox {
   @extend %flexbox3;
   color: $colorDanger;
   font-family: 'Libre Baskerville', serif;
   background-color: rgba(128, 128, 128, 0.092);
-  padding-bottom: $length2/2 ;
-  margin: $length2*3 $length2*6;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
 
-  > .iconBox {
-    margin-bottom: $length2*6 ;
-    margin-top: $length2*2 ;
-    font-size: $length2*4 ;
+.iconBox {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: $length2*4 ;
+}
+
+.notComplete {
+  font-size: 30px;
+  margin-bottom: 3rem;
+}
+
+.pageGoToCart {
+  font-size: 20px;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
+}
+
+.btnToCart {
+  border: 0;
+  background-color: $color8;
+  padding: 0;
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .iconBox {
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 
-  > div > .btnToCart {
-    border: 0;
-    background-color: $color8;
-    padding: 0;
+  .iconBox > svg {
+    width: 80px;
+  }
+
+  .notComplete {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  .pageGoToCart {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .iconBox {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .iconBox > svg {
+    width: 90px;
+  }
+
+  .notComplete {
+    font-size: 26px;
+    margin-bottom: 2rem;
+  }
+
+  .pageGoToCart {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .iconBox {
+    margin-top: .75rem;
+    margin-bottom: 2rem;
+  }
+
+  .iconBox > svg {
+    width: 100px;
+  }
+
+  .notComplete {
+    font-size: 27px;
+    margin-bottom: 2.5rem;
+  }
+
+  .pageGoToCart {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .iconBox {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .iconBox > svg {
+    width: 110px;
+  }
+
+  .notComplete {
+    font-size: 29px;
+    margin-bottom: 2.75rem;
+  }
+
+  .pageGoToCart {
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .iconBox {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .iconBox > svg {
+    width: 120px;
+  }
+
+  .notComplete {
+    font-size: 30px;
+    margin-bottom: 3rem;
+  }
+
+  .pageGoToCart {
+    font-size: 18px;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
   }
 }

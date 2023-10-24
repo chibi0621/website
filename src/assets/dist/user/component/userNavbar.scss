@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 1920px;
   min-height: 50px;
+  margin-bottom: 5%;
 }
 
 .navbarBox > a {
@@ -64,7 +65,11 @@
 
 @media screen and (max-width: 600px) {
   .navbarBox {
-    padding: 0px 15px 0px 30px ;
+    padding: 0px 15px 0px 15px ;
+  }
+
+  .logo {
+    padding: 4px 0px;
   }
 }
 
@@ -72,11 +77,19 @@
   .navbarBox {
     padding: 0px 20px 0px 35px ;
   }
+
+  .logo {
+    padding: 4px 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .navbarBox {
     padding: 0px 25px 0px 40px ;
+  }
+
+  .logo {
+    padding: 4px 0px;
   }
 }
 

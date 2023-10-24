@@ -4,7 +4,7 @@
       <span class="p-3">Location 店舖資訊</span>
       <hr/>
     </h4>
-    <div class="col-md-4 color1 paddingLeft">
+    <div class="col-md-4 paddingColor leftMarginBottom">
       <ul>
         <li class="mb-3">
           <div class="mb-1">
@@ -56,7 +56,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-4 color1 paddingLeft">
+    <div class="col-md-4 paddingColor rightMarginBottom">
       <ul>
         <li class="mb-3">
           <div class="mb-1">

@@ -1,26 +1,24 @@
 <template>
   <LoadingPlugin :active="isLoading"></LoadingPlugin>
-  <div class="row mt-5 mb-5 sticky-top">
-    <h4 class="fs-4 mb-5 cartTitle">
+  <div class="row sticky-top">
+    <h4 class="fs-4 cartTitle">
       <span class="p-3">Cart</span>
       <hr>
     </h4>
-    <div class="paddingX">
+    <div class="cartBox">
       <table class="table align-middle table-light">
         <thead class="borderBottom">
           <tr class="fw-bold">
-            <th width="5%"></th>
             <th width="50%">品名</th>
             <th width="20%">數量</th>
             <th width="5%"></th>
-            <th width="10%">單價</th>
-            <th width="10%">移除品項</th>
+            <th width="15%">單價</th>
+            <th width="10%">移除</th>
           </tr>
         </thead>
         <tbody>
           <template v-if="cart.carts">
             <tr v-for="item in cart.carts" :key="item.id">
-              <td></td>
               <td>
                 {{ item.product.title }}
                 <div class="text-success" v-if="item.coupon">
@@ -52,25 +50,23 @@
         </tbody>
         <tfoot>
           <tr class="fw-bold">
-            <td></td>
-            <td width="280"></td>
-            <td width="280"></td>
-            <td width="280"></td>
-            <td width="380">總計</td>
-            <td>{{ $filters.currency(cart.total) }}</td>
+            <td width="50%"></td>
+            <td width="20%"></td>
+            <td width="5%"></td>
+            <td width="15%">總計</td>
+            <td width="10%">{{ $filters.currency(cart.total) }}</td>
           </tr>
           <tr v-if="cart.final_total !== cart.total">
-            <td></td>
-            <td width="280"></td>
-            <td width="280"></td>
-            <td width="280"></td>
-            <td width="380" class="text-success">折扣價</td>
-            <td class="text-success">{{ $filters.currency(cart.final_total) }}</td>
+            <td width="50%"></td>
+            <td width="20%"></td>
+            <td width="5%"></td>
+            <td width="15%" class="text-success">折扣價</td>
+            <td width="10%" class="text-success">{{ $filters.currency(cart.final_total) }}</td>
           </tr>
         </tfoot>
       </table>
     </div>
-    <div class="input-group input-group-sm paddingX">
+    <div class="input-group input-group-sm cartBox">
       <input type="text" class="form-control" v-model="coupon_code"
       aria-label="Text" placeholder="請輸入優惠碼"/>
       <div class="input-group-append">
@@ -80,7 +76,7 @@
       </div>
     </div>
   </div>
-  <div class="row mt-5">
+  <div class="row mt-5 bottomBox">
     <div class="d-flex justify-content-center">
       <button type="button" class="orderBtn"
       @click="goToOrder">

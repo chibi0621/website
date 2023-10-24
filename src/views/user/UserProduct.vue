@@ -22,12 +22,12 @@
       </ol>
     </div>
     <hr class="breadHr">
-    <div class="row justify-content-center">
-      <div class="col-1"></div>
-      <figure class="col-5">
+    <div class="row justify-content-center aProductBox">
+      <div class="col-md-1"></div>
+      <figure class="col-md-5 figureBox">
         <img :src="product.imageUrl" alt="" class="img-fluid mb-3">
       </figure>
-      <div class="col-5">
+      <div class="col-md-5 productTextBox">
         <h2 class="productName fs-4 mb-5">{{ product.title }}</h2>
         <div class="mb-2 textBox">商品類型：</div>
         <div class="text mb-5">
@@ -51,7 +51,7 @@
           </button>
         </div>
       </div>
-      <div class="col-1"></div>
+      <div class="col-md-1"></div>
     </div>
   </div>
 </template>

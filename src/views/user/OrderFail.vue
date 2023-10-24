@@ -8,10 +8,10 @@
         0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
       </svg>
     </div>
-    <div class="fs-1 mb-5">
+    <div class="notComplete">
       訂單未成立，請重新訂購
     </div>
-    <div class="fs-5 mt-2 mb-5 text-dark">
+    <div class="pageGoToCart text-dark">
       頁面將跳轉至購物車，點擊
       <button class="btnToCart text-decoration-underline" @click="toCart">
         此連結
