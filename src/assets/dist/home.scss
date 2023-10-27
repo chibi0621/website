@@ -8,7 +8,7 @@ header {
 }
 
 .positionSet {
-  @extend %flexbox2;
+  @extend %flexbox12;
   margin: 0 auto;
   padding: 0;
 }
@@ -30,7 +30,6 @@ header {
 }
   
 .navBox {
-  @extend %flexbox6;
   margin: 0;
   background-color: transparent;
   height: auto;
@@ -38,9 +37,8 @@ header {
   margin-left: 100px;
 }
 
-.toggleBtn {
-  border: 0;
-  outline: none;
+.toggleIcon {
+  color: $color1;
 }
 
 
@@ -61,11 +59,16 @@ header {
   } 
 }
 
-.linkBox {
+.bigLinkBox {
   justify-content: space-around;
 }
 
-    
+.linkBox {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
 .navLink {
   width:800px;
   display: flex;
@@ -75,11 +78,11 @@ header {
       
 .navLink > a {
   width: 100%;
+  margin: 2%;
   color: #000;
   font-size: 15px;
   letter-spacing: 2px;
   text-align: center;
-  font-family: 'Libre Baskerville', serif;
   transition: .5s;
   opacity: 1;
 }
@@ -98,20 +101,18 @@ section {
 section > h2 {
   padding: 100px 120px 0px 120px;
   font-size: 23px;
-  font-family: 'Libre Baskerville', serif;
   color: $color1;
 }
 
 section > h3 {
-  padding: 50px 0px;
+  padding: 3% 0;
   text-align: center;
   font-size: 23px;
-  font-family: 'Libre Baskerville', serif;
 }
 
 .boxCenter {
   @extend %flexbox1;
-  padding: 0px 500px;
+  padding: 3% 26%;
 }
 
 .boxCenter > a {
@@ -132,7 +133,7 @@ section > h3 {
     
 .followUsBox {
   @extend %flexbox2;
-  padding: 0px 120px;
+  padding: 0 5%;
   margin: 0 auto;
 }
 
@@ -149,22 +150,18 @@ section > h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  padding: 200px 0px;
+  padding: 28% 0;
 }
 
 .locationBox > h5 {
-  font-family: 'Libre Baskerville', serif;
   font-size: 20px;
-  padding: 0px 50px;
-  margin-bottom: 10px;
+  padding: 1% 3%;
 }
 
 .locationBox > h6 {
-  font-family: 'Libre Baskerville', serif;
   font-size: 18px;
-  padding: 0px 20px;
-  margin-left: 60px;
-  margin-bottom: 30px;
+  padding: 0 2%;
+  margin-left: 1%;
   background-color: #00000017;
   border-radius: 5px;
   width: fit-content;
@@ -172,11 +169,10 @@ section > h3 {
 
 .locationBox > a {
   color: #000;
-  font-family: 'Libre Baskerville', serif;
   font-size: 15px;
   opacity: 1;
   transition: .5s;
-  padding: 0px 0px 0px 480px;
+  padding: 3% 0 0 90%;
 }
 
 .locationBox > a:hover {
@@ -196,7 +192,7 @@ section > h3 {
 
 
 .carouselProductBox {
-  padding: 100px 200px 30px 200px;
+  padding: 0 15%;
 }
 
 .homeProductBtn {
@@ -205,16 +201,16 @@ section > h3 {
   padding: 0;
 }
 
-.homeProductBtn > div > h5 {
-  font-family: 'Libre Baskerville', serif;
+.homeProductBtn > div > h5, .cardBox > p {
+  font-size: 16px;
+}
+
+.bigCardBox {
+  padding: 1% 1%;
 }
 
 .cardBox {
   @extend %flexbox2;
-}
-
-.cardBox > p {
-  font-family: 'Libre Baskerville', serif;
 }
 
 .cardBox > button {
@@ -232,7 +228,6 @@ section > h3 {
 .footerBox {
   @extend %flexbox2;
   width: 100%;
-  font-family: 'Libre Baskerville', serif;
   padding: 0px 5px 0px 40px;
 }
 
@@ -306,103 +301,466 @@ section > h3 {
 
 //RWD
 @media screen and (max-width: 600px) {
-  .brandBox {
-    display: none;
-  }
-
+  //header
   .navBox {
-    margin: 0 ;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0 2%;
+    margin: 2% 0;
   }
 
   .navBox > button {
-    border: 0;
-  }
-
-  .navBox > button:focus {
-    border: 0;
-  }
-
-  .navBox > button:active {
-    border: 0;
-  }
-
-  .searchBtn > svg {
-    margin-right: 0;
+    margin: 4% 0 2% 0;
   }
 
   .linkBox {
-    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navLink {
+    width: 100%;
+    margin: 0;
   }
 
   .navLink > a {
-    text-align: start;
-    margin: 10px 3px 3px 3px;
-    padding: 3% 0px 0px 2%;
+    width: 100%;
+    text-align: end;
+    margin: 4%;
   }
 
-  .navLink > a:hover {
-    opacity: .9;
-    transform: scaleY(1.1);
+  .searchBtn > svg {
+    margin: 0;
+    width: 20px;
+    height: 20px;
   }
 
-  .searchBtn {
-    margin: 10px 3px 10px 3px;
-    padding: 1% 0px 0px 2%;
+  //carousel of section
+  section > h2 {
+    font-size: 19px;
+    padding: 11%;
   }
 
+  .carouselProductBox {
+    padding: 0 15%;
+    margin: 0 ;
+  }
+
+  .bigCardBox {
+    padding: 3% 1%;
+  }
+
+  .homeProductBtn > div > h5, .cardBox > p {
+    font-size: 14px;
+    letter-spacing: .05rem;
+  }
+
+  .homeProductBtn > svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  //follow us section
+  section > h3 {
+    padding: 3% 0;
+    font-size: 20px;
+  }
+
+  .boxCenter {
+    padding: 2% 20%;
+  }
+
+  .followUsBox {
+    padding: 0 5%;
+  }
+
+  //location section
+  .locationBox {
+    padding: 20% 0;
+  }
+
+  .locationBox > h5 {
+    font-size: 19px;
+    padding: 1% 3%;
+    margin-bottom: 0;
+  }
+
+  .locationBox > h6 {
+    font-size: 17px;
+    padding: 0 2%;
+    margin-left: 3%;
+    margin-bottom: 0;
+  }
+
+  .locationBox > a {
+    font-size: 14px;
+    padding: 1% 0 0 77%;
+  }
 }
 
 @media screen and (min-width: 600px) {
-  .brandBox {
-    display: none;
-  }
-
+  //header
   .navBox {
-    margin-left: 0px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0 2%;
+    margin: 2% 0;
   }
 
-  .searchBtn > svg {
-    margin-right: 0;
+  .navBox > button {
+    margin: 6% 0 3% 0;
+  }
+
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navLink {
+    width: 100%;
+    margin: 0;
   }
 
   .navLink > a {
-    margin: 3px;
+    width: 100%;
+    text-align: end;
+    margin: 5%;
   }
 
+  .searchBtn > svg {
+    margin: 0;
+    width: 21px;
+    height: 21px;
+  }
+
+  //carousel of section
+  section > h2 {
+    font-size: 20px;
+    padding: 8%;
+  }
+  
+  .carouselProductBox {
+    padding: 0 16%;
+    margin: 0 ;
+  }
+  
+  .bigCardBox {
+    padding: 2% 1%;
+  }
+  
+  .homeProductBtn > div > h5, .cardBox > p {
+    font-size: 14px;
+    letter-spacing: .05rem;
+  }
+  
+  .homeProductBtn > svg {
+    width: 19px;
+    height: 19px;
+  }
+  
+  //follow us section
+  section > h3 {
+    padding: 3% 0;
+    font-size: 20px;
+  }
+
+  .boxCenter {
+    padding: 3% 18%;
+  }
+  
+  .followUsBox {
+    padding: 0 5%;
+  }
+  
+  //location section
+  .locationBox {
+    padding: 22% 0;
+  }
+  
+  .locationBox > h5 {
+    font-size: 19px;
+    padding: 1% 3%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > h6 {
+    font-size: 17px;
+    padding: 0 2%;
+    margin-left: 3%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > a {
+    font-size: 14px;
+    padding: 3% 0 0 82%;
+    margin-top: 2%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .brandBox {
-    display: none;
+  //header
+  .navBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0 2%;
+    margin: 2% 0;
   }
 
-  .navBox {
-    margin-left: 0px;
+  .navBox > button {
+    margin: 8% 0 4% 0;
+  }
+
+  .linkBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navLink {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navLink > a {
+    width: 100%;
+    text-align: end;
+    margin: 6%;
+  }
+
+  .searchBtn > svg {
+    margin: 0;
+    width: 22px;
+    height: 22px;
+  }
+
+  //carousel of section
+  section > h2 {
+    font-size: 21px;
+    padding: 9%;
   }
   
-  .linkBox {
-    text-align: center;
+  .carouselProductBox {
+    padding: 0 13%;
+    margin: 0 ;
+  }
+  
+  .bigCardBox {
+    padding: 2% 1%;
+  }
+  
+  .homeProductBtn > div > h5, .cardBox > p {
+    font-size: 15px;
+    letter-spacing: 0rem;
+  }
+  
+  .homeProductBtn > svg {
+    width: 19px;
+    height: 19px;
+  }
+  
+  //follow us section
+  section > h3 {
+    padding: 3% 0;
+    font-size: 21px;
+  }
+  
+  .boxCenter {
+    padding: 3% 21%;
+  }
+
+  .followUsBox {
+    padding: 0 5%;
+  }
+  
+  //location section
+  .locationBox {
+    padding: 24% 0;
+  }
+  
+  .locationBox > h5 {
+    font-size: 19px;
+    padding: 0 2%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > h6 {
+    font-size: 17px;
+    padding: 0 2%;
+    margin-left: 2%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > a {
+    font-size: 14px;
+    padding: 3% 0 0 87%;
+    margin-top: 2%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .brandBox {
-    display: block;
+  //header
+  .navBox {
+    padding: 0;
+    margin: 0;
   }
 
-  .navBox {
-    margin-left: 100px;
+  .bigLinkBox {
+    width: 620px;
+    margin-right: 3%;
+  }
+
+  .linkBox {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navLink > a {
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+  }
+
+  .searchBtn > svg {
+    margin: 0;
+  }
+
+  //carousel of section
+  section > h2 {
+    font-size: 22px;
+    padding: 10%;
+  }
+  
+  .carouselProductBox {
+    padding: 0 14%;
+    margin: 0 ;
+  }
+  
+  .bigCardBox {
+    padding: 1% 1%;
+  }
+  
+  .homeProductBtn > div > h5, .cardBox > p {
+    font-size: 16px;
+    letter-spacing: 0rem;
+  }
+  
+  .homeProductBtn > svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  //follow us section
+  section > h3 {
+    padding: 3% 0;
+    font-size: 22px;
+  }
+
+  .boxCenter {
+    padding: 3% 24%;
+  }
+  
+  .followUsBox {
+    padding: 0 5%;
+  }
+  
+  //location section
+  .locationBox {
+    padding: 26% 0;
+  }
+  
+  .locationBox > h5 {
+    font-size: 20px;
+    padding: 0 2%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > h6 {
+    font-size: 18px;
+    padding: 0 2%;
+    margin-left: 2%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > a {
+    font-size: 15px;
+    padding: 3% 0 0 87%;
+    margin-top: 5%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .brandBox {
-    display: block;
+  //header
+  .bigLinkBox {
+    width: 720px;
+    margin-right: 2%;
   }
 
-  .navBox {
-    margin-left: 100px;
+  //carousel of section
+  section > h2 {
+    font-size: 23px;
+    padding: 11%;
+  }
+  
+  .carouselProductBox {
+    padding: 0 15%;
+    margin: 0 ;
+  }
+  
+  .bigCardBox {
+    padding: 1% 1%;
+  }
+  
+  .homeProductBtn > div > h5, .cardBox > p {
+    font-size: 16px;
+    letter-spacing: 0rem;
+  }
+  
+  .homeProductBtn > svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  //follow us section
+  section > h3 {
+    padding: 3% 0;
+    font-size: 23px;
+  }
+
+  .boxCenter {
+    padding: 3% 26%;
+  }
+  
+  .followUsBox {
+    padding: 0 5%;
+  }
+  
+  //location section
+  .locationBox {
+    padding: 28% 0;
+  }
+  
+  .locationBox > h5 {
+    font-size: 20px;
+    padding: 0 1%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > h6 {
+    font-size: 18px;
+    padding: 0 2%;
+    margin-left: 1%;
+    margin-bottom: 0;
+  }
+  
+  .locationBox > a {
+    font-size: 15px;
+    padding: 3% 0 0 90%;
+    margin-top: 0;
   }
 }

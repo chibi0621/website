@@ -8,7 +8,7 @@
       </li>
       <li class="page-item" v-for="page in pages.total_pages" :key="page">
         <a class="page-link paginationLink" href="#" @click.prevent="updatePage(page)">
-            {{ page }}
+          {{ page }}
         </a>
       </li>
       <li class="page-item">

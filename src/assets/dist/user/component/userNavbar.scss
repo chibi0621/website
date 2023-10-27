@@ -1,9 +1,8 @@
 @import '@/assets/all.scss';
 
 .navbarBox {
-  @extend %flexbox2;
+  @extend %flexbox12;
   margin: 0 auto;
-  padding: 0px 45px ;
   background-color: $color7;
   width: 100%;
   max-width: 1920px;
@@ -27,12 +26,14 @@
 }
 
 .navBox {
-  @extend %flexbox6;
   margin: 0;
   background-color: transparent;
   height: auto;
   padding: 0;
-  margin-left: 100px;
+}
+
+.toggleIcon {
+  color: $color1;
 }
 
 .linkBox {
@@ -48,11 +49,11 @@
 
 .navLink > a {
   width: 100%;
+  margin: 2%;
   color: #000;
   font-size: 15px;
   letter-spacing: 2px;
   text-align: center;
-  font-family: 'Libre Baskerville', serif;
   transition: .5s;
   opacity: 1;
 }
@@ -63,65 +64,100 @@
   transform: scale(1.1);
 }
 
+//RWD
 @media screen and (max-width: 600px) {
-  .navbarBox {
-    padding: 0px 15px 0px 15px ;
+  .navBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
-  .logo {
-    padding: 4px 0px;
+  .navBox > button {
+    margin: 4% 0 2% 0;
+  }
+
+  .navLink {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navLink > a {
+    width: 100%;
+    text-align: end;
+    margin: 4%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .navbarBox {
-    padding: 0px 20px 0px 35px ;
+  .navBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
-  .logo {
-    padding: 4px 0px;
+  .navBox > button {
+    margin: 6% 0 3% 0;
+  }
+
+  .navLink {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navLink > a {
+    width: 100%;
+    text-align: end;
+    margin: 5%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .navbarBox {
-    padding: 0px 25px 0px 40px ;
+  .navBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
-  .logo {
-    padding: 4px 0px;
+  .navBox > button {
+    margin: 8% 0 4% 0;
+  }
+
+  .navLink {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navLink > a {
+    width: 100%;
+    text-align: end;
+    margin: 6%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .navbarBox {
-    width: 100%;
-    padding: 0px 20px 0px 35px ;
-  }
-
-  .navBox{
-    margin: 0;
-  }
-  .navLink {
-    width: 650px;
+  .linkBox {
+    width: 700px;
   }
 
   .navLink > a {
-    padding: 3px;
+    width: 100%;
+    text-align: center;
+    margin: 2%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .navbarBox {
+  .logo {
+    margin-left: 2%;
+  }
+
+  .linkBox {
+    width: 820px;
+  }
+
+  .navLink > a {
     width: 100%;
-    padding: 0px 45px ;
-  }
-
-  .navLink {
-    width: 800px;
-  }
-
-  .navLink > a  {
-    padding: 0;
+    text-align: center;
+    margin: 2%;
   }
 }

@@ -1,29 +1,45 @@
 @import '../../all.scss';
 
+.dashboardNavBox {
+  @extend %flexbox12;
+  margin: 0 auto;
+  background-color: $color7;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 50px;
+  margin-bottom: 5%;
+}
+
 .dashboardBox {
-  @extend %flexbox3;
-  text-align: center;
-  color: $color1;
-  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
 }
 
 .navBrand {
-  width: 100%;
+  max-width: 200px;
+  max-height: 70px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
+  align-items: flex-start;
 }
 
-> .logo {
+.logo {
   margin: 0;
+  max-width: 50%;
+  padding: 0;
 }
 
 .navText {
-  letter-spacing: 16px;
-  padding: 0px 0px 0px 40px;
+  letter-spacing: .15rem;
+  font-size: 15px;
+  padding: 0;
 }
 
+.toggleIcon {
+  color: $color1;
+}
 
 .link {
   @extend %flexbox2;
@@ -52,96 +68,102 @@
 
 //RWD
 @media screen and (max-width: 600px) {
-  .dashboardBox {
-    flex-direction: row;
+  .dashboardNavBox {
+    padding: 0 3%;
+    align-items: baseline;
   }
 
-  .navBrand {
-    width: 70%;
+  .dashboardBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: flex-start;
   }
 
-  .logo {
-    max-width: 40%;
+  .link {
+    width: 100%;
+    margin: 0;
   }
 
-  .navText {
-    letter-spacing: 10px;
-    font-size: 16px;
-    padding: 0px 0px 0px 14px;
+  .link > a {
+    width: 100%;
+    text-align: end;
+    margin: 4%;
   }
-
 }
 
-@media screen and (min-width: 600px) {
-  .dashboardBox {
-    flex-direction: row;
+@media screen and (min-width: 600px) { 
+  .dashboardNavBox {
+    padding: 0 2%;
+    align-items: baseline;
   }
 
-  .navBrand {
-    width: 70%;
+  .dashboardBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: flex-start;
   }
 
-  .logo {
-    max-width: 40%;
+  .link {
+    width: 100%;
+    margin: 0;
   }
 
-  .navText {
-    letter-spacing: 10px;
-    font-size: 16px;
-    padding: 0px 0px 0px 20px;
+  .link > a {
+    width: 100%;
+    text-align: end;
+    margin: 5%;
   }
-
 }
 
 @media screen and (min-width: 768px) {
-  .dashboardBox {
-    flex-direction: row;
+  .dashboardNavBox {
+    padding: 1% 2%;
+    align-items: baseline;
   }
 
-  .navBrand {
-    width: 70%;
+  .dashboardBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: flex-start;
   }
 
-  .logo {
-    max-width: 40%;
+  .link {
+    width: 100%;
+    margin: 0;
   }
 
-  .navText {
-    letter-spacing: 14px;
-    font-size: 18px;
-    padding: 0px 0px 0px 34px;
+  .link > a {
+    width: 100%;
+    text-align: end;
+    margin: 6%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .dashboardBox {
-    flex-direction: column;
+  .link {
+    width: 680px;
+    align-items: end;
   }
 
-  .navBrand {
+  .link > a {
     width: 100%;
-    align-items: center;
+    text-align: center;
+    margin: 1.5%;
   }
-
-  .logo {
-    max-width: 50%;
-  }
-
-  .navText {
-    letter-spacing: 16px;
-    padding: 0px 0px 0px 42px;
-    font-size: 20px;
-  }
-
 }
 
 @media screen and (min-width: 1200px) {
-  .navText {
-    letter-spacing: 16px;
-    padding: 0px 0px 0px 40px;
-    font-size: 20px;
+  .link {
+    width: 780px;
+    align-items: end;
+  }
+
+  .link > a {
+    width: 100%;
+    text-align: center;
+    margin: 1.5%;
   }
 }

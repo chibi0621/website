@@ -101,6 +101,11 @@ $font4: 18px;
   justify-content: center;
 }
 
+%flexbox12 {
+  display: flex;
+  justify-content: space-between;
+}
+
 %mutedBorder {
   border: 1px solid #dee2e6;
 }
@@ -143,6 +148,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Libre Baskerville', serif;
 }
 
 body {
