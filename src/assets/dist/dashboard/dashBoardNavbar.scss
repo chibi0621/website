@@ -44,12 +44,12 @@
 .link {
   @extend %flexbox2;
   width: 900px;
-  letter-spacing: $length2/5*2 ;
+  letter-spacing: .2rem ;
 }
 
 .link > a {
   color: #000;
-  font-size: $font4;
+  font-size: 18px;
   border-bottom: 1px solid rgb(160,121,100);
   transition: .5s;
   opacity: 1;

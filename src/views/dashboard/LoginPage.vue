@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-5">
     <form class="row" @submit.prevent="signIn">
-      <div class="col-md-6">
+      <div class="col-sm-10 col-md-8 col-lg-7">
         <h2 class="mb-3 memberLogin text-center">管理者登入</h2>
         <div class="mb-2 p-3">
           <input

@@ -25,9 +25,9 @@ div, th, td {
 }
 
 .orderSuccess {
-  font-size: $length2*5 ;
+  font-size: 2.5rem ;
   color: $colorSuccess;
-  margin-bottom: $length2*6 ;
+  margin-bottom: 3rem ;
   text-align: center;
 }
 
@@ -60,6 +60,7 @@ div, th, td {
   transform: scale(1.1);
 }
 
+//RWD
 @media screen and (max-width: 600px) {
   .checkoutTitle {
     padding: 0 7%;
@@ -70,7 +71,7 @@ div, th, td {
   }
 
   .orderSuccess {
-    font-size: $length2*3 ;
+    font-size: 1.5rem ;
   }
 
 }
@@ -85,7 +86,7 @@ div, th, td {
   }
 
   .orderSuccess {
-    font-size: $length2*3.5 ;
+    font-size: 1.75rem ;
   }
 }
 
@@ -99,7 +100,7 @@ div, th, td {
   }
 
   .orderSuccess {
-    font-size: $length2*4 ;
+    font-size: 2rem ;
   }
 }
 
@@ -109,7 +110,7 @@ div, th, td {
   }
 
   .orderSuccess {
-    font-size: $length2*4.5 ;
+    font-size: 2.25rem ;
   }
 }
 
@@ -119,6 +120,6 @@ div, th, td {
   }
 
   .orderSuccess {
-    font-size: $length2*5 ;
+    font-size: 2.5rem ;
   }
 }
