@@ -1,5 +1,6 @@
 # Chibi Official Website
 deployed on vercel ☞ https://website-nine-taupe.vercel.app/#/
+有購物功能的官方網站，並包含後台管理頁面，為響應式網站。
 
 ### - 取得專案
 `$ git clone https://github.com/chibi0621/website.git`
