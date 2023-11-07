@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userProduct.scss';
+import '@/assets/user/userProduct.scss';
 
 export default {
   data() {

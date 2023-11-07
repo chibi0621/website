@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userContact.scss';
+import '@/assets/user/userContact.scss';
 
 export default {
   created() {

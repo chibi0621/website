@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import '@/assets/dist/dashboard/dashBoardNavbar.scss';
+import '@/assets/dashboard/dashBoardNavbar.scss';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default {

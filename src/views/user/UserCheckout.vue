@@ -73,7 +73,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userCheckout.scss';
+import '@/assets/user/userCheckout.scss';
 
 export default {
   data() {

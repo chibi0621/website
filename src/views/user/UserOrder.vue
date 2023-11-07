@@ -121,7 +121,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userOrder.scss';
+import '@/assets/user/userOrder.scss';
 
 export default {
   data() {

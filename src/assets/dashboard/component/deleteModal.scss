@@ -1,0 +1,50 @@
+@import '@/assets/all.scss';
+
+.modalh5 {
+  color: $colorDanger;
+  font-weight: bold;
+}
+
+.modalh6 {
+  font-size: 20px;
+  color: $color5;
+  margin-bottom: 1rem ;
+}
+
+.deleteRemind {
+  color: $colorDanger;
+  font-size: 15px;
+}
+
+.cancelBtn {
+  border: 0;
+  background-color: transparent;
+  transition: .5s;
+  opacity: .7;
+}
+
+.cancelBtn:hover {
+  background-color: #00000081;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px 7px;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.deleteCheckBtn {
+  border: 0;
+  background-color: transparent;
+  color: $colorDanger;
+  transition: .5s;
+  opacity: .7;
+}
+
+.deleteCheckBtn:hover {
+  background-color: $colorDanger;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px 7px;
+  opacity: 1;
+  transform: scale(1.1);
+}

@@ -112,7 +112,7 @@
 
 <script>
 import modalMixin from '@/mixins/modalMixin';
-import '@/assets/dist/dashboard/component/productModal.scss';
+import '@/assets/dashboard/component/productModal.scss';
 
 export default {
   props: {

@@ -1,0 +1,51 @@
+@import '@/assets/all.scss';
+
+form {
+  @extend %flexbox7;
+  font-family: 'Libre Baskerville', serif;
+  margin:  0 auto;
+}
+
+
+.memberLogin {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  color: $color1;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.memberInput {
+  font-family: 'Libre Baskerville', serif;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid #00000058;
+  caret-color: #000;
+}
+
+.memberInput:focus {
+  outline: none;
+}
+
+.loginBtn {
+  font-family: 'Libre Baskerville', serif;
+  width: 40%;
+  padding: 8px 0px;
+  border: 0;
+  background-color: rgba(128, 128, 128, 0.107);
+  color: #000;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: .5s;
+}
+
+.loginBtn:hover {
+  color: $color1;
+  background-color: transparent;
+  border: 1px solid $color1;
+  border-radius: 10px;
+  opacity: .7;
+  transform: scale(1.1);
+}

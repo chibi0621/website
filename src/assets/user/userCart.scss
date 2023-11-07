@@ -1,0 +1,138 @@
+@import '@/assets/all.scss';
+
+table, input, button {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.cartTitle {
+  color: $color1;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+  padding: 0px 100px;
+}
+
+.cartBox {
+  padding: 0px 16%;
+}
+
+.bottomBox {
+  margin-bottom: 20%;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #8c645096;
+}
+
+.trashBtn {
+  border: 0;
+  background-color: transparent;
+}
+
+.btnCoupon {
+  font-family: 'Libre Baskerville', serif;
+  color: #000;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  opacity: 1;
+  transition: .5s;
+}
+
+.btnCoupon:hover {
+  color: $color1;
+  background-color: #5d403611;
+  border: 0;
+  opacity: .9;
+  transform: scale(0.95);
+}
+
+.orderBtn {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  width: 20%;
+  padding: 10px;
+  color: $color1;
+  background-color: #57443d11;
+  border: 0px;
+  opacity: 1;
+  transition: .5s;
+}
+
+.orderBtn:hover {
+  color: $color2;
+  background-color: transparent;
+  opacity: .9;
+  transform: scale(1.1);
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .cartTitle {
+    padding: 0 7%;
+  }
+
+  .cartBox {
+    padding: 0 12%;
+  }
+
+  .orderBtn {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cartTitle {
+    padding: 0 8%;
+  }
+
+  .cartBox {
+    padding: 0 13%;
+  }
+
+  .orderBtn {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cartTitle {
+    padding: 0 9%;
+  }
+
+  .cartBox {
+    padding: 0 14%;
+  }
+
+  .orderBtn {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cartTitle {
+    padding: 0 10%;
+  }
+
+  .cartBox {
+    padding: 0 15%;
+  }
+
+  .orderBtn {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cartTitle {
+    padding: 0 11%;
+  }
+
+  .cartBox {
+    padding: 0 16%;
+  }
+
+  .orderBtn {
+    width: 20%;
+  }
+}

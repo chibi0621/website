@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import '@/assets/dist/dashboard/productList.scss';
+import '@/assets/dashboard/productList.scss';
 import ProductModal from '@/components/ProductModal.vue';
 import DelModal from '@/components/DelModal.vue';
 import Pagination from '@/components/PagiNation.vue';

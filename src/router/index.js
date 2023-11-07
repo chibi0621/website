@@ -56,10 +56,6 @@ const routes = [
         component: () => import('../views/user/UserLogin.vue'),
       },
       {
-        path: 'order/fail',
-        component: () => import('../views/user/OrderFail.vue'),
-      },
-      {
         path: 'checkout/:orderId',
         component: () => import('../views/user/UserCheckout.vue'),
       },
@@ -72,7 +68,7 @@ const routes = [
         component: () => import('../views/user/UserPromotional.vue'),
       },
       {
-        path: 'about_chibi',
+        path: 'about_us',
         component: () => import('../views/user/AboutChibi.vue'),
       },
       {

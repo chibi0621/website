@@ -100,7 +100,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userStoreLocation.scss';
+import '@/assets/user/userStoreLocation.scss';
 
 export default {
   created() {

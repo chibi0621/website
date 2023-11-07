@@ -25,7 +25,7 @@
               <router-link to="/user/promotional_activity">NEWS</router-link>
               <router-link to="/user/product">PRODUCTS</router-link>
               <router-link to="/user/cart">CART</router-link>
-              <router-link to="/user/about_chibi">COMPANY</router-link>
+              <router-link to="/user/about_us">COMPANY</router-link>
               <router-link to="/user/store_location">STORE</router-link>
               <router-link to="/user/login">LOG IN</router-link>
               </div>
@@ -428,9 +428,7 @@
           </a>
         </div>
       </section>
-      <aside>
-        <router-link to="/dashboard/login">管理者登入</router-link>
-      </aside>
+      <ManagerLogin></ManagerLogin>
     </main>
     <Footer></Footer>
   </div>
@@ -439,7 +437,8 @@
 </template>
 
 <script>
-import '@/assets/dist/home.scss';
+import '@/assets/home.scss';
+import ManagerLogin from '@/components/ManagerLogin.vue';
 import Footer from '@/components/UserFooter.vue';
 import SearchModal from '@/components/SearchModal.vue';
 import 'bootstrap/dist/js/bootstrap.bundle';
@@ -452,7 +451,7 @@ export default {
     };
   },
   components: {
-    SearchModal, Footer,
+    SearchModal, Footer, ManagerLogin,
   },
   methods: {
     openModal() {

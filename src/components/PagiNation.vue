@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import '@/assets/dist/dashboard/component/pagination.scss';
+import '@/assets/dashboard/component/pagination.scss';
 
 export default {
   props: ['pages'],

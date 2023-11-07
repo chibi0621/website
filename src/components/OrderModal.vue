@@ -109,7 +109,7 @@
 </template>
 <script>
 import modalMixin from '@/mixins/modalMixin';
-import '@/assets/dist/dashboard/component/orderModal.scss';
+import '@/assets/dashboard/component/orderModal.scss';
 
 export default {
   name: 'orderModal',

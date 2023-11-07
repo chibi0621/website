@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import '@/assets/dist/dashboard/loginPage.scss';
+import '@/assets/dashboard/loginPage.scss';
 
 export default {
   data() {

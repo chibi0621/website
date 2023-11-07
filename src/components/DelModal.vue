@@ -43,7 +43,7 @@
 
 <script>
 import modalMixin from '@/mixins/modalMixin';
-import '@/assets/dist/dashboard/component/deleteModal.scss';
+import '@/assets/dashboard/component/deleteModal.scss';
 
 export default {
   props: {

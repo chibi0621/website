@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userPromotional.scss';
+import '@/assets/user/userPromotional.scss';
 
 export default {
 

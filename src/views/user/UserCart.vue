@@ -87,7 +87,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userCart.scss';
+import '@/assets/user/userCart.scss';
 
 export default {
   data() {

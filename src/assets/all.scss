@@ -3,132 +3,9 @@
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 
-$color1: #5d4036;
-$color2: #8c6450;
-$color3: #dbb9a4;
-$color4: #F4E0D4;
-$color5: #2d1f1b;
-$color6: #2e2019;
-$color7: #fff;
-$color8: #ffffff00;
-$color9: #dbb9a4ea;
-$color10: #5d4036c4;
-$color11: #291c18;
-$color12: #453028;
-$color13: #f4e0d47b;
-$color14: #a2b4a0f6;
-$color15: #dee2e6;
-$colorSuccess: rgb(28, 135, 84);
-$colorDanger: #c23946;
-$length1: 20%;
-$length2: .5rem;
-$length3: 5px;
-$length4: 100px;
-$font1: 12px;
-$font2: 14px;
-$font3: 16px;
-$font4: 18px;
-
-%flexbox1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-%flexbox2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-%flexbox3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-%flexbox4 {
-  display: flex;
-  align-items: center;
-}
-
-%flexbox5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-%flexbox6 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-%flexbox7 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-%flexbox8 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-%flexbox9 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-%flexbox10 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-%flexbox11 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-%flexbox12 {
-  display: flex;
-  justify-content: space-between;
-}
-
-%mutedBorder {
-  border: 1px solid #dee2e6;
-}
-
-%title {
-  font-size: $length2*4;
-  font-weight: 700;
-  margin-bottom: $length2*2;
-}
-
-%modalInput {
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid rgb(160, 121, 100, .5);
-  padding: 7px 7px;
-  outline-style: none;
-}
-
-%modalH6 {
-  background-color: #5d403608;
-}
-
-
+//CSS Reset
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -174,10 +51,99 @@ a {
   text-decoration: none;
 }
 
-@keyframes swing {
-  15%{transform: translateX(5px);}
-  40%{transform: translateX(-5px);}
-  65%{transform: translateX(2px);}
-  85%{transform: translateX(-2px);}
-  100%{transform: translateX(0px);}
+//自定義色彩
+$color1: #5d4036;
+$color2: #8c6450;
+$color3: #ffffff00;
+$color4: #5d4036c4;
+$color5: #453028;
+$colorSuccess: rgb(28, 135, 84);
+$colorDanger: #c23946;
+
+//自定義排版
+%flexbox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flexbox2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flexbox3 {
+  display: flex;
+  align-items: center;
+}
+
+%flexbox4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%flexbox5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+%flexbox6 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+%flexbox7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+%flexbox8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+%flexbox9 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+%flexbox10 {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flexbox11 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+//自定義樣式
+%mutedBorder {
+  border: 1px solid #dee2e6;
+}
+
+%modalInput {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(160, 121, 100, .5);
+  padding: 7px 7px;
+  outline-style: none;
+}
+
+%modalH6 {
+  background-color: #5d403608;
 }

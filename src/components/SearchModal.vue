@@ -30,7 +30,7 @@
 </template>
 <script>
 import modalMixin from '@/mixins/modalMixin';
-import '@/assets/dist/user/component/searchModal.scss';
+import '@/assets/user/component/searchModal.scss';
 
 export default {
   name: 'searchModal',

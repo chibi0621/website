@@ -55,7 +55,7 @@
 
 <script>
 import modalMixin from '@/mixins/modalMixin';
-import '@/assets/dist/dashboard/component/couponModal.scss';
+import '@/assets/dashboard/component/couponModal.scss';
 
 export default {
   name: 'couponsModal',

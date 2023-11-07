@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/component/userFooter.scss';
+import '@/assets/user/component/userFooter.scss';
 
 export default {
   created() {

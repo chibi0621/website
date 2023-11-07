@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/aboutChibi.scss';
+import '@/assets/user/aboutChibi.scss';
 
 export default {
 

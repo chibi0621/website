@@ -1,0 +1,79 @@
+@import '@/assets/all.scss';
+
+.newCouponBtn {
+  width: 15%;
+  padding: 8px 0px;
+  color: $color2;
+  background-color: transparent;
+  border: 1px solid $color2;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: .5s;
+}
+
+.newCouponBtn:hover {
+  background-color: rgba(128, 128, 128, 0.107);
+  border: 0;
+  color: #000;
+  opacity: .7;
+  transform: scale(1.1);
+}
+
+.couponListTable {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .newCouponBtn {
+    width: 25%;
+  }
+
+  .couponListTable {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .newCouponBtn {
+    width: 23%;
+  }
+
+  .couponListTable {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newCouponBtn {
+    width: 20%;
+  }
+
+  .couponListTable {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .newCouponBtn {
+    width: 18%;
+  }
+
+  .couponListTable {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newCouponBtn {
+    width: 15%;
+  }
+
+  .couponListTable {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+  }
+}

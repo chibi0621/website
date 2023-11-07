@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import '@/assets/dist/dashboard/couponList.scss';
+import '@/assets/dashboard/couponList.scss';
 import DelModal from '@/components/DelModal.vue';
 import CouponModal from '@/components/CouponModal.vue';
 

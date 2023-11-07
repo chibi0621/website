@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userLogin.scss';
+import '@/assets/user/userLogin.scss';
 
 export default {
   data() {

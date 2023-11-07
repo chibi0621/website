@@ -1,0 +1,93 @@
+@import '@/assets/all.scss';
+
+@mixin flexBox6 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ProductListTitle {
+  color: $color1;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+  padding: 0 5%;
+}
+
+.productListBox {
+  @include flexBox6;
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 10%;
+}
+
+.btnGetProduct {
+  border: 0;
+  background-color: $color3;
+}
+
+.productImg {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 250px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.productTitle {
+  margin: 0;
+  color: $color2;
+  font-weight: bold;
+}
+
+.priceBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.addToCartBtn {
+  height: auto;
+  opacity: .5;
+  transition: .5s;
+  border: 0;
+}
+
+.addToCartBtn:hover {
+  color: $color1;
+  opacity: 1;
+  transform: scale(.9);
+}
+      
+//RWD
+@media screen and (max-width: 600px) {
+  .productListBox > div {
+    margin: 4%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .productListBox > div {
+    margin: 3%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .productListBox > div {
+    margin: 4%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .productListBox > div {
+    margin: 3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productListBox > div {
+    margin: 2%;
+  }
+}

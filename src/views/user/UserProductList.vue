@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/userProductList.scss';
+import '@/assets/user/userProductList.scss';
 
 export default {
   data() {

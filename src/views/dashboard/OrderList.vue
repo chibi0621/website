@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import '@/assets/dist/dashboard/orderList.scss';
+import '@/assets/dashboard/orderList.scss';
 import DelModal from '@/components/DelModal.vue';
 import OrderModal from '@/components/OrderModal.vue';
 import Pagination from '@/components/PagiNation.vue';

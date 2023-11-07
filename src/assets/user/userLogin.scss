@@ -1,0 +1,302 @@
+@import '@/assets/all.scss';
+
+@mixin flexBox4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  margin: 0;
+}
+
+.loginTitle {
+  color: $color1;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+  padding: 0px 11%;
+}
+
+.formBox {
+  font-family: 'Libre Baskerville', serif;
+  margin:  0 auto;
+  margin-bottom: 10%;
+}
+
+.boxLeft {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  @extend %mutedBorder;
+}
+
+.login {
+  font-size: 30px;
+  color: $color1;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.loginInputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.loginInput {
+  width: 90%;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 3px;
+  border: 1px solid #00000058;
+  caret-color: #000;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginCheckboxBox {
+  display: flex;
+  padding: 0px 30px;
+  margin-bottom: 30px;
+}
+
+.loginCheckbox {
+  margin-right: 3px;
+}
+
+.loginBtnBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.loginBtn {
+  width: 40%;
+  padding: 8px 0px;
+  border: 0;
+  background-color: rgba(128, 128, 128, 0.107);
+  color: #000;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: .5s;
+}
+
+.loginBtn:hover {
+  color: $color1;
+  background-color: transparent;
+  border: 1px solid $color1;
+  border-radius: 10px;
+  opacity: .7;
+  transform: scale(1.1);
+}
+
+.List {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.qBox {
+  @extend %flexbox5;
+  width: 60%;
+  padding: 0;
+}
+          
+.qBox > li > a {
+  color: #000;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 0;
+  opacity: 1;
+  transition: .5s;
+}
+
+.qBox > li > a:hover {
+  color: $color1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: .8;
+}
+
+.hrBox {
+  display: none;
+}
+
+.allRightBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign {
+  font-size: 30px;
+  color: $color1;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.boxRight {
+  @include flexBox4;
+  width: 80%;
+  height: 12rem;
+  margin-bottom: 2rem;
+  @extend %mutedBorder;
+}
+
+.member {
+  color: $color1;
+  padding: 5%;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: .25rem;
+}
+
+.submitBtn {
+  width: 32%;
+  padding: 8px 2px;
+  border: 0;
+  background-color: rgba(128, 128, 128, 0.107);
+  color: #000;
+  letter-spacing: 2px;
+  opacity: 1;
+  transition: .5s;
+}
+
+.submitBtn:hover {
+  color: $color1;
+  background-color: transparent;
+  border: 1px solid $color1;
+  border-radius: 10px;
+  opacity: .7;
+  transform: scale(1.1);
+}
+
+//RWD
+@media screen and (max-width: 600px) {
+  .loginTitle {
+    padding: 0 7%;
+  }
+  
+  .boxLeft {
+    padding: 5% 9% 0 9%;
+    margin-bottom: 5%;
+  }
+
+  .hrBox {
+    display: block;
+    padding: 0 12%;
+    color: $color1;
+  }
+
+  .allRightBox {
+    padding: 5% 9% 0 9%;
+  }
+
+  .submitBtn {
+    width: 32%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .loginTitle {
+    padding: 0 8%;
+  }
+  
+  .boxLeft {
+    padding: 5% 9% 0 9%;
+    margin-bottom: 5%;
+  }
+
+  .hrBox {
+    display: block;
+    padding: 0 12%;
+    color: $color1;
+  }
+
+  .allRightBox {
+    padding: 5% 9% 0 9%;
+  }
+
+  .submitBtn {
+    width: 32%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .loginTitle {
+    padding: 0 9%;
+  }
+
+  .qBox {
+    width: 80%;
+  }
+
+  .hrBox {
+    display: none;
+  }
+
+  .boxRight {
+    width: 90%;
+  }
+
+  .member {
+    font-size: 1rem;
+  }
+
+  .submitBtn {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .loginTitle {
+    padding: 0 10%;
+  }
+
+  .qBox {
+    width: 80%;
+  }
+
+  .boxRight {
+    width: 90%;
+  }
+
+  .member {
+    font-size: 1.25rem;
+  }
+
+  .submitBtn {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .loginTitle {
+    padding: 0 11%;
+  }
+
+  .qBox {
+    width: 60%;
+  }
+
+  .boxRight {
+    width: 80%;
+  }
+
+  .submitBtn {
+    width: 32%;
+  }
+}

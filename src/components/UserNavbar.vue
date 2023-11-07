@@ -23,7 +23,7 @@
             <router-link to="/user/promotional_activity">NEWS</router-link>
             <router-link to="/user/product">PRODUCTS</router-link>
             <router-link to="/user/cart">CART</router-link>
-            <router-link to="/user/about_chibi">COMPANY</router-link>
+            <router-link to="/user/about_us">COMPANY</router-link>
             <router-link to="/user/store_location">STORE</router-link>
             <router-link to="/user/login">LOG IN</router-link>
             <router-link to="/" @click.prevent="logout">SIGN OUT</router-link>
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import '@/assets/dist/user/component/userNavbar.scss';
+import '@/assets/user/component/userNavbar.scss';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default {
