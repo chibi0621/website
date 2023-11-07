@@ -1,5 +1,5 @@
 # Chibi Official Website
-有購物功能的官方網站，並包含後台管理頁面，為響應式網站。
+有購物功能的官方網站，並包含後台管理頁面，為響應式網頁。
 
 deployed on vercel ☞ https://website-nine-taupe.vercel.app/#/
 
