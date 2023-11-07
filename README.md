@@ -10,7 +10,7 @@ or
 
 
 ### - 資料夾說明
-<img src = "https://github.com/chibi0621/website/blob/main/files.png"/>
+<img src = "https://github.com/chibi0621/website/blob/main/website.png"/>
 
 
 ### - 專案技術
