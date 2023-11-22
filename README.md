@@ -16,14 +16,14 @@ or
 
 
 ### - 專案技術
-Vue - v3.3.4
-VueRouter - v4.0.3
-Vue Loading Overlay - v6.0
-Vee Validate - v4.9.6
-Axios - v1.4.0
-Mitt - v3.0.0
-Bootstrap - v5.3.0
-Bootstrap Icons - v1.10.5
+Vue - v3.3.4  
+Vue Router - v4.0.3  
+Vue Loading Overlay - v6.0  
+Vee Validate - v4.9.6  
+Axios - v1.4.0  
+Mitt - v3.0.0  
+Bootstrap - v5.3.0  
+Bootstrap Icons - v1.10.5  
 
 ### - 第三方服務
 使用六角學院hexschool提供的api
